@@ -10,4 +10,7 @@ Registered users would also have the ability to request albums that could be add
 
 
 ### User Stories 
+I built my user stories in an agile framework where I built upon the foundations laid in 
+the code institue's Boutique Ado project and tailored them to the needs of my projects users and store owner.
+The table below are the stories upon which this project was built
 
