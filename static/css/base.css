@@ -1,0 +1,74 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Oswald&display=swap');
+
+/* base styling for headers */
+:is(h1, h2, h3, h4, h5, h6,) {
+    font-family: 'Audiowide',
+    cursive;
+}
+
+/* setting default styling for the body */
+body {
+    font-family: 'Oswald',
+    sans-serif;
+}
+
+
+li:focus,
+li:hover {
+    border-bottom: #fcb014;
+}
+
+/* Navbar styling */
+
+.logo-font {
+    font-family: 'Audiowide',
+    cursive;
+    color: #fcb014;
+    text-shadow:2px 2px #c01b21;
+}
+
+.logo-accent {
+    font-family: 'Oswald',
+    sans-serif;
+    color: #c01b21;
+    font-size: 3rem;
+    text-shadow:2px 2px #fcb014;
+}
+
+.blue-background {
+    background-color: #018bd4;
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #fcb014;
+}
+
+/* keep search icon white */
+.fa-search:before {
+    content: "\f002";
+    color: white;
+}
+
+.search-box {
+    border: 2px solid #fcb014;
+    background-color: #fff;
+    color: #018bd4;
+    border-radius: 8px;
+}
+
+.search-box::placeholder {
+    color :#018bd4;
+}
+
+.red-btn {
+    border: 2px solid #fff;
+    background-color: #fcb014;
+}
+

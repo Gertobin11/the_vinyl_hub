@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+
+<head>
+    {% block meta %}
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% endblock %}
+
+    {% block extra_meta %}
+    {% endblock %}
+
+    {% block corecss %}
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" type="text/css">
+    {% endblock %}
+
+    {% block extra_css %}
+    {% endblock %}
+
+    {% block corejs %}
+    <!-- JQuery for functionality and ease of use for front end JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/f0ca44b893.js" crossorigin="anonymous"></script>
+    {% endblock %}
+
+    {% block extra_js %}
+    {% endblock %}
+
+    <title>The Vinyl Hub {% block extra_title %}{% endblock %}</title>
+</head>
+
+<body>
+    <header class="container-fluid fixed-top blue-background">
+        <div id="topnav" class="row pt-lg-2 d-none d-lg-flex"></div>
+        <div class="col-12 col-lg-4 my-auto text-center text-lg-start">
+            <a class="navbar-brand" href="#">
+                <h1 class="mt-6 logo-accent mb-lg-0">The <strong class="logo-font">Vinyl</strong> Hub</h1>
+            </a>
+        </div>
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <form method="GET" action="{">
+                <div class="input-group w-100">
+                    <input class="form-control search-box" type="text" name="query" placeholder="Search our site">
+                    <div class="input-group-append">
+                        <button class="form-control btn red-btn" type="submit">
+                            <span class="icon">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <ul class="list-inline list-unstyled text-center text-lg-end my-0">
+                <li class="list-inline-item dropdown">
+                    <a class="nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <div class="text-center">
+                            <div class="icon"><i class="fas fa-user fa-lg"></i></div>
+                            <p class="red-text my-0">My Account</p>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                        {% if request.user.is_authenticated %}
+                        {% if request.user.is_superuser %}
+                        <a href="" class="dropdown-item">Product Management</a>
+                        {% endif %}
+                        <a href="" class="dropdown-item">My Profile</a>
+                        <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                        {% else %}
+                        <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                        <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                        {% endif %}
+                    </div>
+                </li>
+                {% if request.user.is_authenticated %}
+                <li class="list-inline-item">
+                    <a class="text-red" href="">
+                        <div class="text-center">
+                            <div class="icon"><i class="fas fa-users fa-lg"></i></div>
+                            <p class="red-text
+                                    my-0">User Profiles
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                {% endif %}
+                <li class="list-inline-item">
+                    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                        href="">
+                        <div class="text-center">
+                            <div class="icon"><i class="fas fa-shopping-bag fa-lg"></i></div>
+                            <p class="red-text
+                                    my-0">
+                                {% if grand_total %}
+                                ${{ grand_total|floatformat:2 }}
+                                {% else %}
+                                $0.00
+                                {% endif %}
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </header>
+    {% if messages %}
+    <div class="message_container"></div>
+    {% endif %}
+
+    {% block page_header %}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% block postloadjs %}
+    {% endblock %}
+
+
+</body>
+
+</html>
