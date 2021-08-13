@@ -35,6 +35,10 @@ body {
     background-color: #018bd4;
 }
 
+.background-yellow {
+    background-color: #fcb014;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -74,4 +78,53 @@ body {
 
 #search-mob-btn {
     background-color: #fcb014;
+}
+
+.red-label-text {
+    font-size: 1.2rem;
+    font-family: 'Audiowide',sans-serif;
+    color: #c01b21 !important;
+    text-shadow: 1px 1px #fcb014;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin-left: .5rem;
+    margin-right: 1.2rem;
+}
+
+#main-nav {
+    margin-right: 40px;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: #018bd4;
+    background-color: fff;
+}
+
+.dropdown-item {
+    color:#fff;
+}
+
+.dropdown-menu {
+    border: none;
+}
+/* edit the color of the burger button */
+.navbar-light .navbar-toggler-icon {
+    border-radius: 8px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(252,160,20, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-toggler {
+    border: 2px solid #c01b21;
+    border-radius: 8px;
+}
+    
+/* media queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
 }
