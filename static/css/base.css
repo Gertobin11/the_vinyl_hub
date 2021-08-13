@@ -11,12 +11,7 @@
 body {
     font-family: 'Oswald',
     sans-serif;
-}
-
-
-li:focus,
-li:hover {
-    border-bottom: #fcb014;
+    min-height: 100vh;
 }
 
 /* Navbar styling */
@@ -72,3 +67,11 @@ li:hover {
     background-color: #fcb014;
 }
 
+/* taken from code institute Boutique Ado */
+.main-logo-link {
+    width: fit-content;
+}
+
+#search-mob-btn {
+    background-color: #fcb014;
+}
