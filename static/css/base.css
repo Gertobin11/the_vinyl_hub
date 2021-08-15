@@ -46,6 +46,10 @@ body {
     text-shadow: 2px 2px #fff;
 }
 
+.blue-text{
+    color: #018bd4 !important;
+}
+
 .blue-background {
     background-color: #018bd4;
 }
@@ -189,6 +193,12 @@ a.main-logo-link {
     background-color: #018bd4;
     box-shadow: 3px 5px;
     color: #fff;
+}
+
+/* footer styling */
+
+iframe {
+    border-radius: 8px;
 }
 
 /* media queries */
