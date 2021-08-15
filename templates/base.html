@@ -56,7 +56,7 @@
                             <input class="form-control search-box" type="text" name="q"
                                 placeholder="Search our site">
                             <div class="input-group-append">
-                                <button class="form-control btn red-btn" type="submit">
+                                <button class="form-control btn red-btn" type="submit" aria-label="search-button">
                                     <span class="icon">
                                         <i class="fas fa-search"></i>
                                     </span>
@@ -68,34 +68,37 @@
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                         <li class="list-inline-item dropdown">
-                            <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown"
+                            <a class="text-black nav-link" href="#" id="user-options-dropdown" data-bs-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 <div class="text-center">
                                     <div class="icon"><i class="fas fa-user fa-lg"></i></div>
                                     <p class="text-white my-0">My Account</p>
                                 </div>
                             </a>
-                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                            <div class="dropdown-menu border-0" aria-labelledby="user-options-dropdown">
                                 {% if request.user.is_authenticated %}
                                     {% if request.user.is_superuser %}
-                                        <a href="" class="dropdown-item">Product Management</a>
+                                        <a href="" class="blue-background dropdown-item">Product Management</a>
                                     {% endif %}
-                                    <a href="" class="dropdown-item">My Profile</a>
-                                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                    <a href="" class="blue-background dropdown-item">My Profile</a>
+                                    <a href="{% url 'account_logout' %}" class="blue-background dropdown-item">Logout</a>
                                 {% else %}
-                                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                    <a href="{% url 'account_signup' %}"
+                                        class="blue-background dropdown-item">Register</a>
+                                    <a href="{% url 'account_login' %}" class="blue-background dropdown-item">Login</a>
                                 {% endif %}
                             </div>
                         </li>
-                        <li class="list-inline-item">
-                            <a class="nav-link" href="">
-                                <div class="text-center">
-                                    <div class="icon"><i class="fas fa-users fa-lg"></i></div>
-                                    <p class="text-white my-0">User Profiles</p>
-                                </div>
-                            </a>
-                        </li>
+                        {% if request.user.is_authenticated %}
+                            <li class="list-inline-item">
+                                <a class="nav-link" href="">
+                                    <div class="text-center">
+                                        <div class="icon"><i class="fas fa-users fa-lg"></i></div>
+                                        <p class="text-white my-0">User Profiles</p>
+                                    </div>
+                                </a>
+                            </li>
+                        {% endif %}
                         <li class="list-inline-item">
                             <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
                                 href="">
@@ -126,7 +129,7 @@
             </div>
             <div id="new-deal-banner" class="row text-center">
                 <div class="col background-red text-white">
-                    <h5 class="my-1">Hip Hop Hurray! Registered users get a 15% discount on all Hip Hop Vinyls!!!</h5>
+                    <p class="my-1">Hip Hop Hurray! Registered users get a 15% discount on all Hip Hop Vinyls!!!</p>
                 </div>
             </div>
         </header>
@@ -141,9 +144,9 @@
         {% endblock %}
 
         <footer>
-            <div class="container row mt-10">
+            <div class="row pt-3 container-fluid">
                 <div class="col-12 col-md-4 text-center">
-                    <h5 class="logo-accent">The <strong class="logo-font">Vinyl </strong>Hub</h5>
+                    <p class="logo-accent-footer">The <strong class="logo-font">Vinyl </strong>Hub</p>
                     <ul class="list-unstyled blue-text">
                         <li>
                             <p>Phone: 0871234567</p>
@@ -159,11 +162,36 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-6 text-center">
+                <div class="col-12 col-md-4 text-center">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4883.11238423082!2d-9.710837266903786!3d52.26960377976763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4845357b63555ec1%3A0xb62ce63f4a3edcbe!2s1%20The%20Mall%2C%20Balloonagh%2C%20Tralee%2C%20Co.%20Kerry%2C%20V92%20DK46!5e0!3m2!1sen!2sie!4v1629034420744!5m2!1sen!2sie"
-                        width="90%" height="90%" style="border: 3px solid #018bd4;" allowfullscreen="" loading="lazy"></iframe>
+                        width="90%" title="Google map location of the vinyl hub" height="90%" style="border: 3px solid #018bd4;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
+                <nav class="col-12 col-md-4 text-center">
+                    <p class="logo-accent-footer mb-3">Navigation Links</p>
+                        <ul class="list-unstyled blue-text">
+                            <li class="mb-2">
+                                <a class="blue-text no-dec" href="">Home</a>
+                            </li>
+                            {% if request.user.is_authenticated %}
+                                <li class="mb-2">
+                                    <a class="blue-text no-dec" href="">My Profile</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="blue-text no-dec" href="">User Profiles</a>
+                                </li>
+                            {% endif %}
+                            <li class="mb-2">
+                                <a class="blue-text no-dec" href="">Vinyls</a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="blue-text no-dec" href="">Accessories</a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="blue-text no-dec" href="">Record Players</a>
+                            </li>
+                        </ul>
+                </nav>
             </div>
         </footer>
 

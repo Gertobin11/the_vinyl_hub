@@ -36,3 +36,6 @@ a time when Vinyls were at their peak.
 
 * Had an issue on the home page when I was checking responsiveness the h1 was being going over the page on devices under 700px.
 * This was a straight forward fix as I was able to adjust the font-size with media queries
+* Had an issue with the contrast of the blue text on the white background that would of been an issue 
+for users due to a contrast issue.
+* I solved this by switching from `#018bd4` to a slightly deeper blue `#047ab7`
