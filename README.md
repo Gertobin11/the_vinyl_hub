@@ -28,3 +28,11 @@ a time when Vinyls were at their peak.
 
 ![colour pallette](media/mtv-80s-color-scheme_400x400.png)
 
+
+
+
+
+## Bugs & Fixes 
+
+* Had an issue on the home page when I was checking responsiveness the h1 was being going over the page on devices under 700px.
+* This was a straight forward fix as I was able to adjust the font-size with media queries

@@ -31,12 +31,31 @@ body {
     text-shadow:2px 2px #fcb014;
 }
 
+.logo-font-alt {
+    font-family: 'Audiowide',
+        cursive;
+    color: #fff;
+    text-shadow: 2px 2px #018bd4;
+}
+
+.logo-accent-alt {
+    font-family: 'Oswald',
+        sans-serif;
+    color: #018bd4;
+    font-size: 3rem;
+    text-shadow: 2px 2px #fff;
+}
+
 .blue-background {
     background-color: #018bd4;
 }
 
 .background-yellow {
     background-color: #fcb014;
+}
+
+.background-red {
+    background-color: #c01b21;
 }
 
 /* from Bulma */
@@ -74,6 +93,11 @@ body {
 /* taken from code institute Boutique Ado */
 .main-logo-link {
     width: fit-content;
+    padding-right: 0;
+}
+a.main-logo-link {
+    margin-right: 0;
+    padding: 8px 8px;
 }
 
 #search-mob-btn {
@@ -119,12 +143,179 @@ body {
     border: 2px solid #c01b21;
     border-radius: 8px;
 }
-    
+
+.nav-link {
+    padding: .5rem 1rem;
+}
+
+/* Landing page stylings */
+#landing-page {
+    background-color: #fcb014;
+    height: 80vh;
+}
+
+ #landing-page-img {
+    background: url("/media/record-img.png") no-repeat center;
+    background-size: contain;
+    height: 75vh;
+}
+
+.cta-section {
+    background-color: #fcb014;
+    position: relative;
+}
+
+.centered {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.img-container {
+    position: relative;
+}
+
+.cta-btn {
+    background-color: #c01b21;
+    box-shadow: 5px 10px;
+    color: #fff;
+}
+
+.cta-btn:hover,
+.cta-btn:active {
+    background-color: #018bd4;
+    box-shadow: 3px 5px;
+    color: #fff;
+}
+
 /* media queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
     .container {
         max-width: 80%;
+    }
+}
+/* media query for the cta section */
+
+@media only screen and (max-width: 700px) {
+    #landing-page-img {
+        height: 60vh;
+    }
+    .cta-btn {
+        width: fit-content;
+    }
+    h1.logo-accent-alt {
+        width: fit-content;
+        font-size: 30px;
+    }
+    #landing-page {
+        height: 65vh;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .centered {
+        margin: 0;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* media queries to make the navbar responsive on all devices */
+@media only screen and (max-width: 378px) {
+    .header-spacer {
+        padding-top: 174px;
+    }
+    .nav-link {
+        padding: .5rem .2rem;
+    }
+
+    h5.my-1 {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 402px) and (min-width: 378px) {
+    .header-spacer {
+        padding-top: 130px;
+    }
+    .nav-link {
+        padding: .5rem .2rem;
+    }
+    h5.my-1 {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 586px) and (min-width: 566px) {
+    .header-spacer {
+        padding-top: 115px;
+    }
+
+    .nav-link {
+        padding: .5rem .4rem;
+    }
+
+    h5.my-1 {
+        font-size: small;
+    }
+}
+
+
+@media only screen and (max-width: 566px) and (min-width: 402px) {
+    .header-spacer {
+        padding-top: 130px;
+    }
+
+    .nav-link {
+        padding: .5rem .4rem;
+    }
+
+    h5.my-1 {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 857px) and (min-width: 767px) {
+    .header-spacer {
+        padding-top: 140px;
+    }
+    .nav-link {
+        padding: .5rem .4rem;
+    }
+    h5.my-1 {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 586px) {
+    .header-spacer {
+        padding-top: 115px;
+    }
+
+    .nav-link {
+        padding: .5rem .4rem;
+    }
+
+    h5.my-1 {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 857px) {
+    .header-spacer {
+        padding-top: 149px;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    .header-spacer {
+        padding-top: 174px;
     }
 }
