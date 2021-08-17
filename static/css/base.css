@@ -235,6 +235,41 @@ iframe {
     background-color: #fcb014;
 }
 
+/* found a realistic shadow effect on https://codepen.io/jsonjun/pen/vNRwWq */
+.box-shadow {
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.8)
+}
+
+.box-shadow:hover,
+.box-shadow:active, 
+.box-shadow:focus {
+    box-shadow: 0 30px 40px rgba(255, 255, 255, 0.8)
+}
+
+/* zoom on hover for images , seen on https://w3bits.com/css-image-hover-zoom/ */
+.img-hover-zoom {
+    overflow: hidden;
+}
+
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.5);
+}
+
+.card {
+    width: 90%;
+}
+
+/* found a nice hr style here https://css-tricks.com/examples/hrs/ */
+.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
 /* media queries */
 
 /* Slightly larger container on xl screens */

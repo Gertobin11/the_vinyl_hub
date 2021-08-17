@@ -24,9 +24,11 @@ The colours and overall theme of the site is based off a vibrant 80's colour pal
 ![80s brand inspiration](media/1980s-brand-inspiration_1_400x400.png)
 
 From these images I decided on `#fcb014`, `#c01b21`and `#018bd4` as this would have the feel and style from the 80's,
-a time when Vinyls were at their peak.
+a time when Vinyls were at their peak. Due to accessability reasons I had to alter the blue to `#047ab7` for greater contrast for the users.
 
 ![colour pallette](media/mtv-80s-color-scheme_400x400.png)
+
+![update color pallette](media/new_color_palette.png)
 
 
 
@@ -39,3 +41,8 @@ a time when Vinyls were at their peak.
 * Had an issue with the contrast of the blue text on the white background that would of been an issue 
 for users due to a contrast issue.
 * I solved this by switching from `#018bd4` to a slightly deeper blue `#047ab7`
+
+## Credits 
+
+* The images for the record players and the description were taken from https://www.worldwidestereo.com/blogs/wws-underground/entries/best-turntables.
+* The images for the vinyls and the descriptions were taken from https://longlivevinyl.net/2020/02/18/the-essential-hiphop/ and https://www.radiox.co.uk/features/best-vinyl-records-to-collect/
