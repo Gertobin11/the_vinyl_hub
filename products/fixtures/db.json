@@ -1,0 +1,1419 @@
+[{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2021-08-12T10:46:52.970Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "the_vinyl_hub@example.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2021-08-15T23:54:02.273Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "rock",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2021-08-15T23:54:18.867Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "soul",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2021-08-15T23:54:35.726Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "3",
+        "object_repr": "hip_hop",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2021-08-15T23:54:50.253Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "4",
+        "object_repr": "pop",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2021-08-15T23:55:12.174Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "5",
+        "object_repr": "heavy_metal",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2021-08-15T23:55:25.548Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "6",
+        "object_repr": "accessories",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2021-08-15T23:55:48.529Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "7",
+        "object_repr": "record_players",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2021-08-16T23:15:36.052Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "the_stone_roses_1989",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2021-08-16T23:48:22.993Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "2",
+        "object_repr": "pauls_boutique",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2021-08-17T12:10:59.109Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "8",
+        "object_repr": "dance",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2021-08-17T12:12:46.621Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "3",
+        "object_repr": "unknown_pleasures",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2021-08-17T12:16:49.495Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "4",
+        "object_repr": "sgt_peppers_lonely_hearts_club_band",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2021-08-17T12:18:32.518Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "5",
+        "object_repr": "what_ever_people_say_i_am",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2021-08-17T12:19:49.877Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "6",
+        "object_repr": "definitely_maybe",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2021-08-17T14:12:39.636Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "6",
+        "object_repr": "definitely_maybe",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2021-08-17T14:49:48.397Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "7",
+        "object_repr": "the_queen_is_dead",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2021-08-17T14:52:09.743Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "8",
+        "object_repr": "the_dark_side_of_the_moon",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2021-08-17T14:53:27.910Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "9",
+        "object_repr": "elephant",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2021-08-17T14:55:23.115Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "10",
+        "object_repr": "the_hounds_of_love",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2021-08-17T14:58:31.724Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "11",
+        "object_repr": "sticky_fingers",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2021-08-17T15:01:04.408Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "12",
+        "object_repr": "londons_calling",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2021-08-17T15:01:51.940Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "12",
+        "object_repr": "londons_calling",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Sku\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2021-08-17T15:03:02.218Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "13",
+        "object_repr": "low",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2021-08-17T15:04:47.946Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "14",
+        "object_repr": "led_zeppelin_iv",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2021-08-17T15:06:06.978Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "15",
+        "object_repr": "blonde_on_blonde",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2021-08-17T15:08:02.550Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "16",
+        "object_repr": "xx",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2021-08-17T15:09:36.961Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "17",
+        "object_repr": "back_in_black",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2021-08-17T15:10:46.374Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "18",
+        "object_repr": "nevermind",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2021-08-17T15:13:18.134Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "19",
+        "object_repr": "surfer_rosa",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2021-08-17T15:14:52.784Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "20",
+        "object_repr": "ok_computer",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2021-08-17T15:16:06.534Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "21",
+        "object_repr": "back_to_black",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2021-08-17T15:24:42.745Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "22",
+        "object_repr": "ten",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2021-08-17T15:26:02.490Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "23",
+        "object_repr": "live_at_leeds",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2021-08-17T15:29:44.420Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "24",
+        "object_repr": "badmotorfinger",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2021-08-17T15:31:39.247Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "25",
+        "object_repr": "parallel_lines",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2021-08-17T15:34:03.290Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "26",
+        "object_repr": "run_d_m_c",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2021-08-17T15:36:21.765Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "27",
+        "object_repr": "paid_in_full",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2021-08-17T15:38:17.361Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "28",
+        "object_repr": "criminal_minded",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2021-08-17T15:40:47.368Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "29",
+        "object_repr": "critical_beatdown",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2021-08-17T15:42:59.857Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "30",
+        "object_repr": "it_takes_a_nations_of_millions_to_hold_us_back",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2021-08-17T15:44:39.550Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "31",
+        "object_repr": "straight_outta_compton",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2021-08-17T15:49:15.152Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "32",
+        "object_repr": "the_great_adventures_of",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2021-08-17T15:51:08.973Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "33",
+        "object_repr": "death_certificate",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2021-08-17T15:52:55.201Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "34",
+        "object_repr": "the_low_end_theory",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2021-08-17T15:53:38.444Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "7",
+        "object_repr": "auto_record_players",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Friendly name\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2021-08-17T16:01:54.042Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "6",
+        "object_repr": "manual_record_player",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Friendly name\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2021-08-17T16:02:04.270Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "7",
+        "object_repr": "auto_record_player",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Friendly name\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2021-08-17T16:02:21.345Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "9",
+        "object_repr": "cleaner",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2021-08-17T16:02:33.096Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "10",
+        "object_repr": "headphones",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2021-08-17T16:18:04.817Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "35",
+        "object_repr": "orbit-plus-turntable",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2021-08-17T19:01:59.742Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "36",
+        "object_repr": "dp_300f",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2021-08-17T19:05:26.424Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "37",
+        "object_repr": "orbit_special_turntable_with_built_In_preamplifier",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2021-08-17T19:08:25.620Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "38",
+        "object_repr": "musiccast_vinyl_500_wi-fi_turntable",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2021-08-17T19:11:41.269Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "39",
+        "object_repr": "planar_3_turntable_with_elys_2_mm_cartridge",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$0TToqVU93shanS5kTWL4Jq$uuYq/lMFxBmKAIIqpoqwLmls9hevVL5fiblkp1PVS4U=",
+        "last_login": "2021-08-18T18:50:55.632Z",
+        "is_superuser": true,
+        "username": "madzia",
+        "first_name": "",
+        "last_name": "",
+        "email": "madzi@123.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-08-12T00:47:17.843Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$MpM9jdWFzZMECuRV2ZI1hc$KvLoOaOfcPwkWAVA48mFfu9vydZRghzv6C0qQzAisQ4=",
+        "last_login": "2021-08-12T10:52:06.839Z",
+        "is_superuser": false,
+        "username": "MASON",
+        "first_name": "",
+        "last_name": "",
+        "email": "123233@mail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-08-12T10:51:21.914Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "0w7na3f8o0sayd1eu6gmc7dch70u94tg",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSHACNNx6b7fQBgeUjU0Ke3K-O_apAvd3nPOfQkftrX6refFT0lchBan341DfOS2g3QP7TbLOLd1mVjuijxol-Oc8vN6uH8HNfT6rZGxQDBEXDQCkEYFyTqFziYo2RRC0sYWMzjlzhGBlMlDohyZiTWI9we8Izb-:1mFkio:SitqaXhpftmifP9qGT8S7i8Jvz1Otptz2jHvmYkIptA",
+        "expire_date": "2021-08-30T22:04:42.022Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "xytj5ir7d3k9qc5k97kelaezbtd3yae7",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSHACNNx6b7fQBgeUjU0Ke3K-O_apAvd3nPOfQkftrX6refFT0lchBan341DfOS2g3QP7TbLOLd1mVjuijxol-Oc8vN6uH8HNfT6rZGxQDBEXDQCkEYFyTqFziYo2RRC0sYWMzjlzhGBlMlDohyZiTWI9we8Izb-:1mGQeN:KZSY4Cw5paq2zPdH8-XWdOvngnRbyOPwCzGwFCkuBaY",
+        "expire_date": "2021-09-01T18:50:55.654Z"
+    }
+}, {
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+        "domain": "the_vinyl_hub@example.com",
+        "name": "The Vinyl Hub"
+    }
+}, {
+    "model": "account.emailaddress",
+    "pk": 1,
+    "fields": {
+        "user": 2,
+        "email": "123233@mail.com",
+        "verified": true,
+        "primary": true
+    }
+}, {
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+        "name": "rock",
+        "friendly_name": "Rock"
+    }
+}, {
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+        "name": "soul",
+        "friendly_name": "Soul"
+    }
+}, {
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+        "name": "hip_hop",
+        "friendly_name": "Hip Hop"
+    }
+}, {
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+        "name": "pop",
+        "friendly_name": "Pop"
+    }
+}, {
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+        "name": "heavy_metal",
+        "friendly_name": "Heavy Metal"
+    }
+}, {
+    "model": "products.category",
+    "pk": 6,
+    "fields": {
+        "name": "manual_record_player",
+        "friendly_name": "Manual Record Player"
+    }
+}, {
+    "model": "products.category",
+    "pk": 7,
+    "fields": {
+        "name": "auto_record_player",
+        "friendly_name": "Automatic Record Player"
+    }
+}, {
+    "model": "products.category",
+    "pk": 8,
+    "fields": {
+        "name": "dance",
+        "friendly_name": "Dance"
+    }
+}, {
+    "model": "products.category",
+    "pk": 9,
+    "fields": {
+        "name": "cleaner",
+        "friendly_name": "Cleaner"
+    }
+}, {
+    "model": "products.category",
+    "pk": 10,
+    "fields": {
+        "name": "headphones",
+        "friendly_name": "Headphones"
+    }
+}, {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "category": 1,
+        "sku": "r1001",
+        "name": "the_stone_roses_1989",
+        "friendly_name": "The Stone Roses(1989)",
+        "brand": "the_stone_roses",
+        "friendly_brand": "The Stone Roses",
+        "description": "First released as CD was starting to become the format of choice, there was something pleasingly retro about owning this on vinyl, mainly thanks to the distinctive John Squire artwork on the outer and inner sleeves. You may need to crank up your amp, though - it's a long album and those grooves get a bit small (and therefore quieter).",
+        "price": "19.99",
+        "rating": "8.00",
+        "image_url": null,
+        "image": "the_stone_roses_qn3u0ty.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "category": 3,
+        "sku": "h1001",
+        "name": "pauls_boutique",
+        "friendly_name": "Pauls Boutique",
+        "brand": "beastie_boys",
+        "friendly_brand": "Beastie Boys",
+        "description": "The hip hop trio seemed washed up following their controversial debut, Licensed To Ill, but this ambitious melange of samples proved they weren't just a novelty band. The vinyl edition makes the most of the excellent sleeve photo with a fold-out cover.",
+        "price": "19.99",
+        "rating": "8.00",
+        "image_url": null,
+        "image": "beastie_boys_pb.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "category": 8,
+        "sku": "d1001",
+        "name": "unknown_pleasures",
+        "friendly_name": "Unknown Pleasures",
+        "brand": "joy_division",
+        "friendly_brand": "Joy Division",
+        "description": "Divided into the \"Inside\" and the \"Outside\" on vinyl, the Manchester band's debut album is housed in a fine Peter Saville sleeve - but make sure you get a version with the embossed texture on the cover! There was a 40th anniversary edition released in 2019 on ruby red vinyl and the black and white cover reversed.",
+        "price": "19.99",
+        "rating": "8.00",
+        "image_url": null,
+        "image": "joy_division.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "category": 1,
+        "sku": "r1002",
+        "name": "sgt_peppers_lonely_hearts_club_band",
+        "friendly_name": "Sgt Pepper's Lonely Hearts Club Band",
+        "brand": "the_beatles",
+        "friendly_brand": "The Beatles",
+        "description": "Some say Revolver is the best one to get on vinyl, but the Pepper package is much, much better. From the ground-breaking cover, to Sir Peter Blake's cardboard cut-out inserts, this is a meticulously-sequenced album, complete with a dog whistle and a \"secret track\" engraved into the end of side two. It's worth paying a bit extra for the original mono edition, which is the only Beatles-approved version and still sounds incredible.",
+        "price": "19.99",
+        "rating": "7.00",
+        "image_url": null,
+        "image": "the_beatles_sgt.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "category": 1,
+        "sku": "r1003",
+        "name": "what_ever_people_say_i_am",
+        "friendly_name": "Whatever People Say I Am, That's What I'm Not",
+        "brand": "arctic_monkeys",
+        "friendly_brand": "Arctic Monkeys",
+        "description": "One of the best debut albums of the past 20 years is a perfect listen on vinyl. Side 1 opens with the classic View From The Afternoon, while the flip kicks off with the equally memorable Riot Van. The record label continues the theme of the album cover artwork as it features a photo of a full ashtray.",
+        "price": "19.99",
+        "rating": "8.00",
+        "image_url": null,
+        "image": "artic_monkeys_whatever.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "category": 1,
+        "sku": "r1004",
+        "name": "definitely_maybe",
+        "friendly_name": "Definitely Maybe",
+        "brand": "oasis",
+        "friendly_brand": "Oasis",
+        "description": "Remastered in 2014 for the album's twentieth anniversary, this is the definitive Britpop statement, complete with a memorable piece of cover art. And don't forget all those incredible tunes within the grooves. They're not bad, either.",
+        "price": "19.99",
+        "rating": "7.00",
+        "image_url": null,
+        "image": "oasis_dm.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "category": 1,
+        "sku": "r1004",
+        "name": "the_queen_is_dead",
+        "friendly_name": "The Queen Is Dead",
+        "brand": "the_smiths",
+        "friendly_brand": "The Smiths",
+        "description": "Morrissey and Marr paid homage to the 1960s in their songwriting, so listening to this landmark record on MP3 or CD is just plain wrong. Plus, on vinyl, you get the fantastic gatefold sleeve, featuring the full lyrics and Stephen Wright's classic shot of the band outside Salford Lad's Club.",
+        "price": "19.99",
+        "rating": "7.00",
+        "image_url": null,
+        "image": "the_smiths_tqid.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "category": 1,
+        "sku": "r1005",
+        "name": "the_dark_side_of_the_moon",
+        "friendly_name": "The Dark Side Of The Moon",
+        "brand": "pink_floyd",
+        "friendly_brand": "Pink Floyd",
+        "description": "Another classic rock essential, revel in the Hipgnosis artwork and ponder on life's mysteries as you flip the record over after The Great Gig In The Sky. Money remains one of the all-time greatest \"Side Two, Track Ones\".",
+        "price": "19.99",
+        "rating": "9.00",
+        "image_url": null,
+        "image": "pink_floyd_dsotm.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "category": 1,
+        "sku": "r1006",
+        "name": "elephant",
+        "friendly_name": "Elephant",
+        "brand": "the_white_stripes",
+        "friendly_brand": "The White Stripes",
+        "description": "Jack and Meg's career-defining album, pressed across two nice vinyl discs. \"No computers were used during the writing, recording, mixing or mastering of this record\" declare the sleeve notes. But you're reading this digitally, so you've gone and ruined it.",
+        "price": "14.99",
+        "rating": "7.00",
+        "image_url": null,
+        "image": "the_white_stripes_ele.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+        "category": 4,
+        "sku": "p1001",
+        "name": "the_hounds_of_love",
+        "friendly_name": "The Hounds Of Love",
+        "brand": "kate_bush",
+        "friendly_brand": "Kate Bush",
+        "description": "La Bush’s finest work, segmented into two side-long pieces: The Hounds Of Love and The Ninth Wave. Side one is the hits, side two is one of Kate’s more interesting sonic explorations.",
+        "price": "14.99",
+        "rating": "7.00",
+        "image_url": null,
+        "image": "kate_bush_the_house.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+        "category": 1,
+        "sku": "r1007",
+        "name": "sticky_fingers",
+        "friendly_name": "Sticky Fingers",
+        "brand": "the_rolling_stones",
+        "friendly_brand": "The Rolling Stones",
+        "description": "You need to get your hands on the version with an actual zip on the cover, mind you. That's the only way you'll get the full risqué effect of Andy Warhol's cover art. The music's not bad either. Includes Brown Sugar, Sister Morphine, Wild Horses and many more!",
+        "price": "19.99",
+        "rating": "8.00",
+        "image_url": null,
+        "image": "the_rolling_stones_sticky_fingers.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+        "category": 1,
+        "sku": "r1008",
+        "name": "londons_calling",
+        "friendly_name": "Londons Calling",
+        "brand": "the_clash",
+        "friendly_brand": "The Clash",
+        "description": "Released in the dying days of the 1970s, this very un-punk rock-like double album starts with the incredible title track and careers over four eclectic sides. Original copies didn't list the final track, Train In Vain, which must have been a nice surprise.",
+        "price": "19.99",
+        "rating": "7.00",
+        "image_url": null,
+        "image": "the_clash_londons_calling.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+        "category": 4,
+        "sku": "p1002",
+        "name": "low",
+        "friendly_name": "Low",
+        "brand": "david_bowie",
+        "friendly_brand": "David Bowie",
+        "description": "Let's face it, any Bowie on vinyl is great, but this '77 classic looks fantastic and is divided into the \"pop\" side with tracks like Sound And Vision, and the \"ambient\" side, with Brian Eno's synthy soundscapes. Ian Curtis of Joy Division had a copy of this and so should you.",
+        "price": "19.99",
+        "rating": "8.00",
+        "image_url": null,
+        "image": "david_bowie_low.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+        "category": 1,
+        "sku": "r1009",
+        "name": "led_zeppelin_iv",
+        "friendly_name": "Led Zeppelin IV",
+        "brand": "led_zeppelin",
+        "friendly_brand": "Led Zeppelin",
+        "description": "The Zep's fourth outing included the all-time classic guitar player's anthem, Stairway To Heaven and is an essential addition to any classic rock collection. Plus, you can appreciate the baffling sleeve artwork much better.",
+        "price": "19.99",
+        "rating": "9.00",
+        "image_url": null,
+        "image": "led_zeppelin-lziv.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+        "category": 4,
+        "sku": "p1003",
+        "name": "blonde_on_blonde",
+        "friendly_name": "Blonde On Blonde",
+        "brand": "bob_dylan",
+        "friendly_brand": "Bob Dylan",
+        "description": "More fold-out sleeve fun, as Dylan's classic double album bears a huge quarter-length portrait of the man. Kicking off with the hilarious Rainy Day Women #12 & 35, the LP's final side is taken up with the ambitious eleven-minute track Sad Eyed Lady Of The Lowlands.",
+        "price": "14.99",
+        "rating": "7.00",
+        "image_url": null,
+        "image": "bob_dylan_bob.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+        "category": 4,
+        "sku": "p1004",
+        "name": "xx",
+        "friendly_name": "XX",
+        "brand": "the_xx",
+        "friendly_brand": "The XX",
+        "description": "More fold-out sleeve fun, as Dylan's classic double album bears a huge quarter-length portrait of the man. Kicking off with the hilarious Rainy Day Women #12 & 35, the LP's final side is taken up with the ambitious eleven-minute track Sad Eyed Lady Of The Lowlands.",
+        "price": "14.99",
+        "rating": "7.00",
+        "image_url": null,
+        "image": "thexx_xx.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+        "category": 5,
+        "sku": "hm1001",
+        "name": "back_in_black",
+        "friendly_name": "Back In Black",
+        "brand": "ac_dc",
+        "friendly_brand": "AC/DC",
+        "description": "Heavy metal was meant to be heard on black, black vinyl. The first AccaDacca album recorded after the death of original frontman Bon Scott, this comeback needs to be owned with the embossed cover - the lads did the “Black Album” a decade before Metallica did it. It opens with the mournful Hell’s Bells and then never lets up: Shoot To Thrill, the title track, You Shook Me All Night Long…",
+        "price": "19.99",
+        "rating": "8.00",
+        "image_url": null,
+        "image": "acdc_bib.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+        "category": 1,
+        "sku": "R1010",
+        "name": "nevermind",
+        "friendly_name": "Nevermind",
+        "brand": "nirvana",
+        "friendly_brand": "Nirvana",
+        "description": "An obvious choice? but you need that classic cover full size. Another record of two halves: you know all the famous tunes on side one, while side two digs into the band’s grunge roots, ending on Kurt Cobain’s introverted Something In The Way.",
+        "price": "19.99",
+        "rating": "9.00",
+        "image_url": null,
+        "image": "nirvana_nevermind.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+        "category": 1,
+        "sku": "r1011",
+        "name": "surfer_rosa",
+        "friendly_name": "Surfer Rosa",
+        "brand": "pixies",
+        "friendly_brand": "Pixies",
+        "description": "Produced by alternative rock legend Steve Albini, this full-length debut has more dynamic range than the popular Doolittle and whips up a storm once singer Black Francis gets hollerin’. Side two kicks off with Where Is My Mind, one of the greatest “turn the record over” moments.",
+        "price": "19.99",
+        "rating": "7.00",
+        "image_url": null,
+        "image": "pixies_s_rosa.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+        "category": 1,
+        "sku": "r1012",
+        "name": "ok_computer",
+        "friendly_name": "OK Computer",
+        "brand": "radiohead",
+        "friendly_brand": "Radiohead",
+        "description": "Vinyl was going through its dark years in the post-Britpop era, but Radiohead’s classic was released as a double LP in a gatefold sleeve with the cryptic lyrics printed on it. The sides care called “eeny”, “meeny”, “miney” and “mo” and each one is impeccably sequenced.",
+        "price": "19.99",
+        "rating": "8.00",
+        "image_url": null,
+        "image": "radiohead_okc.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 21,
+    "fields": {
+        "category": 4,
+        "sku": "p1005",
+        "name": "back_to_black",
+        "friendly_name": "Back To Black",
+        "brand": "amy_winehouse",
+        "friendly_brand": "Amy Winehouse",
+        "description": "Born into the CD age, the classic second album from the late, lamented Winehouse has enjoyed a new life on vinyl. With jazz as a musical inspiration, this only seems fitting. Includes the title track, Rehab, Tears Dry On Their Own, Love Is A Losing Game and other lovelorn favourites.",
+        "price": "17.99",
+        "rating": "8.00",
+        "image_url": null,
+        "image": "amy_winehouse_btb.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 22,
+    "fields": {
+        "category": 5,
+        "sku": "hm1002",
+        "name": "ten",
+        "friendly_name": "Ten",
+        "brand": "pearl_jam",
+        "friendly_brand": "Pearl Jam",
+        "description": "Confronted with the vinyl edition, you realise the artwork you’re familiar with is actually a detail from the full cover. A peerless collection of modern rock classics. Includes Alive, Jeremy and Even Flow.",
+        "price": "19.99",
+        "rating": "9.00",
+        "image_url": null,
+        "image": "pearljam_ten.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 23,
+    "fields": {
+        "category": 5,
+        "sku": "hm1003",
+        "name": "live_at_leeds",
+        "friendly_name": "Live At Leeds",
+        "brand": "the_who",
+        "friendly_brand": "The Who",
+        "description": "Sure, you could have a Who studio album in your collection, but wouldn’t you rather have this cobweb-blowing live recording of the band at their peak? The original vinyl came in a brown paper folder that looked like a bootleg and was package with an array of posters and replica bits of memorabilia relating to the Who’s glittering live career.",
+        "price": "19.99",
+        "rating": "8.00",
+        "image_url": null,
+        "image": "the_who_lal.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 24,
+    "fields": {
+        "category": 5,
+        "sku": "hm1004",
+        "name": "badmotorfinger",
+        "friendly_name": "Badmotorfinger",
+        "brand": "soundgarden",
+        "friendly_brand": "Soundgarden",
+        "description": "Any record that kicks off with the howl into the abyss that is Rusty Cage deserves your indulgence. Also includes the brilliant Jesus Christ Pose, but the whole album should annoy the neighbours.",
+        "price": "19.99",
+        "rating": "8.00",
+        "image_url": null,
+        "image": "soundgarden_badmf.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 25,
+    "fields": {
+        "category": 4,
+        "sku": "p1006",
+        "name": "parallel_lines",
+        "friendly_name": "Parallel Lines",
+        "brand": "blondie",
+        "friendly_brand": "Blondie",
+        "description": "A huge-selling album from the days when vinyl was king. Things kick off with the sound of Debbie Harry Hanging On The Telephone, and it’s non-stop hits after that. Heart Of Glass is tucked away in the middle of side two!",
+        "price": "17.99",
+        "rating": "7.00",
+        "image_url": null,
+        "image": "blondie_pl.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 26,
+    "fields": {
+        "category": 3,
+        "sku": "h1002",
+        "name": "run_d_m_c",
+        "friendly_name": "Run D.M.C",
+        "brand": "run_d_m_c",
+        "friendly_brand": "Run D.M.C",
+        "description": "Big Bang time LP-wise, with the Hollis, Queens trio of Russell ‘Run’ Simmons, Daryl ‘D.M.C.‘ McDaniel and Jam Master Jay (Jason Mizell) throwing out beats and rhymes that would define 80s hip-hop. A minimal electro influence is strong, but there’s real staying power here. It’s Like That, Sucker MCs, Hard Times and the groundbreaking Rock Box remain classics. Quite possibly the prime reason ageing B-boys still buy in Sports Direct (Kangol, y’all!).",
+        "price": "19.99",
+        "rating": "8.00",
+        "image_url": null,
+        "image": "rundmc.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 27,
+    "fields": {
+        "category": 3,
+        "sku": "H1003",
+        "name": "paid_in_full",
+        "friendly_name": "Paid In Full",
+        "brand": "eric_b_and_rakim",
+        "friendly_brand": "Eric B and Rakim",
+        "description": "One of the first great DJ/MC pairings, with Rakim still judged by many to be the greatest microphone fiend ever. The title track (remixed by Coldcut) and I Know You Got Soul (remixed by Norman Cook) later gave them chart hits, and even if this isn’t even the duo’s best album (see Follow The Leader) it was a great leap forward. The so-called ‘golden era’ is on.",
+        "price": "19.99",
+        "rating": "8.00",
+        "image_url": null,
+        "image": "ericbrakim_pif.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 28,
+    "fields": {
+        "category": 3,
+        "sku": "h1004",
+        "name": "criminal_minded",
+        "friendly_name": "Criminal Minded",
+        "brand": "boogie_down_productions",
+        "friendly_brand": "Boogie Down Productions",
+        "description": "Widely considered the first boom in ‘gangsta’, the cover had KRS-One and DJ Scott La Rock posing with weapons. It’s more than just unsettling stories about robberies, gang warfare and crack whores, though – KRS-One’s ragga chat was also highly influential, as were the clanking, skeletal beats. It sounds dated now, but at the time, this was a genuine gut-punch and Scott La Rock’s fatal shooting the same year only increased the legend.",
+        "price": "19.99",
+        "rating": "9.00",
+        "image_url": null,
+        "image": "bdp_cm.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 29,
+    "fields": {
+        "category": 3,
+        "sku": "h1007",
+        "name": "critical_beatdown",
+        "friendly_name": "Critical Beatdown",
+        "brand": "ultramagnetic_mcs",
+        "friendly_brand": "Ultramagnetic MCs",
+        "description": "Never mainstream, but in Kool Keith (later aka Dr Octagon and Dr Dooom), The Ultramagnetics had a surrealist MC who genuinely brought art to supposedly ‘simple’ street poetry. Although often unintelligible, Keith’s internal rhyming style was a key force for Eminem, while the Ultras’ beats and breaks were on a par with the dense attack of Public Enemy. Sadly, KK’s probably most famous for being sampled (The Prodigy’s Smack My Bitch Up).",
+        "price": "19.99",
+        "rating": "7.00",
+        "image_url": null,
+        "image": "ultramc_cb.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 30,
+    "fields": {
+        "category": 3,
+        "sku": "h1008",
+        "name": "it_takes_a_nations_of_millions_to_hold_us_back",
+        "friendly_name": "It Takes A Nation Of Millions To Hold Us Back",
+        "brand": "public_enemy",
+        "friendly_brand": "Public Enemy",
+        "description": "Hip-hop’s first great polemicists. Whether it was their media awareness (“Hip-hop is the black CNN”), strategies (Chuck D wrote song titles first) or Chuck and Flavor Flav’s Blackman vs Joker tag-teaming, PE was a masterstoke: brothers, whiteys, TV, labels – no-one was spared. Add the Bomb Squad’s musique concrète sampling and you had a truly monumental LP that sounded like nothing else. Bring the noise!",
+        "price": "19.99",
+        "rating": "8.00",
+        "image_url": null,
+        "image": "pe_itanom.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 31,
+    "fields": {
+        "category": 3,
+        "sku": "h1009",
+        "name": "straight_outta_compton",
+        "friendly_name": "Straight Outta Compton",
+        "brand": "n_w_a",
+        "friendly_brand": "N.W.A.",
+        "description": "If PE were hip-hop’s politicised rallymen, N.W.A were the rioters tearing up outside. This debut LP’s brutal opening triptych of the title cut, Fuck Tha Police and Gangsta caused uproar that not even the chart smarts of Express Yourself would balm. Behind Ice Cube and Eazy-E’s pottymouths, Dr. Dre emerged as a new alchemist of funkology, cutting a lean, mean soundtrack to middle America’s worst nightmare. News just in: N.W.A don’t give a fuck. No, really.",
+        "price": "19.99",
+        "rating": "9.00",
+        "image_url": null,
+        "image": "nwa_soc.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 32,
+    "fields": {
+        "category": 3,
+        "sku": "H1010",
+        "name": "the_great_adventures_of",
+        "friendly_name": "The Great Adventures Of..",
+        "brand": "slick_rick",
+        "friendly_brand": "Slick Rick",
+        "description": "The Richard Pryor of rap, Slick Rick (originally from London) dumped vulgar comedy on a fast-politicising scene. There’s no denying Ricky Walter’s lyrical skills, character turns or pioneering storytelling prowess, for sure, nor the album’s overall ingenuity. He remains one of hip-hop’s most sampled MCs for lunatic classics such as Children’s Story, The Ruler’s Back and, ahem, Treat Her Like A Prostitute. ‘He’s observing, yo’ honour’, goes the defence.",
+        "price": "19.99",
+        "rating": "8.00",
+        "image_url": null,
+        "image": "sr_tgao.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 33,
+    "fields": {
+        "category": 3,
+        "sku": "h1011",
+        "name": "death_certificate",
+        "friendly_name": "DeathCertificate",
+        "brand": "ice_cube",
+        "friendly_brand": "Ice Cube",
+        "description": "Cube left N.W.A in a rage, and here he’s seething about everything: ‘Amerikkka’, pop dance (“You can new jack swiiiiiing on my nutz!”), N.W.A, N.W.A’s manager, Korean shopkeepers, the LAPD, and, oh, getting woken up early. And with his new Lench Mob’s beats banging over Death and Life sides, it’s musically explosive, too. Hardcore. Cube made it clear: this was not an album for white people.",
+        "price": "19.99",
+        "rating": "9.00",
+        "image_url": null,
+        "image": "ice_cude_dc.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 34,
+    "fields": {
+        "category": 3,
+        "sku": "h1012",
+        "name": "the_low_end_theory",
+        "friendly_name": "The Low End Theory",
+        "brand": "a_tribe_called_quest",
+        "friendly_brand": "A Tribe Called Quest",
+        "description": "Too many Tribe albums, too many classics, frankly. But we’ll give this head-nodder the nod. With Phife pushed to the fore alongside Q-Tip, it simply bubbles in its own brilliance. Its jazz-spinning beats are low-riders indeed, and Check The Rhime, Buggin’ Out and the posse-cut Scenario (which broke Busta Rhymes) are slam-dunks. Among the Native Tongues posse, Tribe ruled supreme.",
+        "price": "19.99",
+        "rating": "8.00",
+        "image_url": null,
+        "image": "a_tribe_called_quest_tlet.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 35,
+    "fields": {
+        "category": 6,
+        "sku": "rp1001",
+        "name": "orbit-plus-turntable",
+        "friendly_name": "Orbit Plus Turntable",
+        "brand": "u_turn_audio",
+        "friendly_brand": "U-Turn Audio",
+        "description": "The U-Turn Orbit Plus was a fan favorite before it even hit the market thanks to a 2014 Kickstarter campaign. The reason: there’s a lot to like, starting with build options that let you pick the base color, platter material (acrylic in the photo), cartridge, and more. U-Turn’s minimal, plug & play design is ideal for beginners and we had ours up and running in less than 5 minutes. There’s no short-cutting when it comes to sound; even our most finicky audio pros give the new Orbit Plus a thumbs up.\r\n\r\nU-Turn not only builds every Orbit Plus by hand in their Boston plant but they also assign an audio technician to listen to each before sending it along. (Impressive for this price range.) The only button on the Orbit Plus is for power – there’s no speed switch; you have to manually switch the belt from one groove to another to change RPM speed. If you’re a hands-on type, no biggie… but if you’d prefer a switch that changes speed for you, the Orbit Plus isn’t for you. (Do you really listen to that many 45s?)\r\n\r\nA straight, understated tonearm glides on a pivot-style bearing positioned close to the record, which allows for more accurate groove tracking.  One detail to note is that this does not come with a cue lever built-in.  U-Turn offers a cue lever as an optional attachment which you can find here.  Each Orbit does ship with the cartridge already installed and tracking force perfectly calibrated, which is great for beginners.   \r\n\r\nP.S. U-Turn makes a special version of the Orbit with a pre-amp built-in, called “The Orbit Special.” Check it out.",
+        "price": "300.00",
+        "rating": "7.00",
+        "image_url": null,
+        "image": "orbit_plus.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 36,
+    "fields": {
+        "category": 7,
+        "sku": "rp1002",
+        "name": "dp_300f",
+        "friendly_name": "DP-300F",
+        "brand": "denon",
+        "friendly_brand": "Denon",
+        "description": "Denon’s DP-300F picks up where turntables left off after CDs took over in the 1980s. At the time, most consumer turntables were fully automatic. People listinening to  would put a record on the platter, push a button, and they were done.  From there, the turntable picks up the tonearm, places it over the beginning of the record, gently puts it down, and voilà, music. At the end of the record, the turntable automatically lifts the tonearm, gently puts it back in its holder, and then turns itself off. Convenient, yes, but fully automatic is more about not accidentally scratching your records.\r\n\r\nWhat’s more, given the DP-300F’s preamp (included) can be turned on or off, you can plug it into almost any integrated amp or receiver – even those without a phono input port. This allows the DP-300F to work with almost every home music system. Switching out the cartridge is easy too, should you ever decide to upgrade for something with a bigger range. Do that, and the Denon DP-300F is easily on par with record players that cost two or three times as much. As for looks, the DP-300F is attractive yet unassuming, a classic look built on 4mm thick cabinet walls made of die-cast aluminum. (We love the gloss coating.) \r\n\r\nSo: good-looking, built like a tank, fully automatic, compatible with almost everything, easy to upgrade, made by Denon – an industry legend. What’s not to like?",
+        "price": "399.00",
+        "rating": "8.00",
+        "image_url": null,
+        "image": "dpf300.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 37,
+    "fields": {
+        "category": null,
+        "sku": "rp1003",
+        "name": "orbit_special_turntable_with_built_In_preamplifier",
+        "friendly_name": "Orbit Special Turntable with Built-In Preamplifier",
+        "brand": "u_turn_audio",
+        "friendly_brand": "U-Turn Audio",
+        "description": "Somewhere on this page, we gave “Best Beginner’s Turntable” to the Orbit from U-Turn Audio. Now, we’re talking about the Orbit “Special\" and what makes it so special – the fact that it comes with a Pluto Phono Preamp already built-in. (Watch us take the Orbit Special for a spin in a World Wide Stereo video product review here.)\r\n\r\nIn addition to the Pluto preamp, U-Turn added a cue lever to the Special (thank you) as well as an acrylic platter. The Special also comes in one of two gorgeous, solid hardwood, plinth finishes: flat cut maple and rift walnut.\r\n\r\nThe advantage to having a preamp already built-in? For starters, since a preamp does what an external amp or receiver does, you have one less piece of equipment to deal with. You can quite literally plug your Orbit Special into any speakers in the house and get up and running in seconds.\r\n\r\nFor the money, Orbit is hard to beat. And, for an American consumer electronics company, that’s saying something.",
+        "price": "549.00",
+        "rating": "9.00",
+        "image_url": null,
+        "image": "uturn_st.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 38,
+    "fields": {
+        "category": 6,
+        "sku": "rp1004",
+        "name": "musiccast_vinyl_500_wi-fi_turntable",
+        "friendly_name": "MusicCast Vinyl 500 Wi-Fi Turntable",
+        "brand": "yamaha",
+        "friendly_brand": "Yamaha",
+        "description": "Yamaha is out to set the gold standard for wireless audio with their own wireless multiroom audio technology, MusicCast, now years in the making. And by gold standard, we’re talking lossless, 24-bit audio streaming throughout the house to up to 10 connected devices. Impressive, to be sure. This year, Yamaha added a turntable to the MusicCast mix – the Yamaha VINYL 500 Wi-Fi turntable – and it’s a beast. (Note: though MusicCast can accept a Bluetooth source, Wi-Fi is far more robust and far better suited to authentic high fidelity.) \r\n\r\nThe VINYL 500 weighs in at a little over 12 pounds, and heavy is good in turntable land. It comes in Steinway gloss black and sets it up in 10/15 minutes. And with both line and phono outputs (RCA jacks), you can hardwire everything like it’s 1973, or download the MusicCast app and start streaming literally anything from anywhere. (Your favorite Internet radio stations, your digital collection, whatever.)  But, the real magic happens when you put an album on the VINYL 500. We did exactly that with a pair of stereo MusicCast speakers hooked up, and the experience was everything one would hope for with a top of the line turntable: incredibly warm with deep, round lows and crisp, clear highs. All in all, very human. \r\n\r\nSo to the question: is the analog turntable experience – the one everyone is raving about – even possible in a wireless environment? With the right turntable, definitely.",
+        "price": "649.99",
+        "rating": "9.00",
+        "image_url": null,
+        "image": "yamaha_musicast.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 39,
+    "fields": {
+        "category": 6,
+        "sku": "rp1005",
+        "name": "planar_3_turntable_with_elys_2_mm_cartridge",
+        "friendly_name": "Planar 3 Turntable with Elys 2 MM Cartridge",
+        "brand": "rega",
+        "friendly_brand": "Rega",
+        "description": "The Rega Planar 3 story begins in the UK in the late 70s and continues to this day. It’s about an ever-evolving turntable conceived and built by two devoted lovers of music, Tony Relph and Roy Gandy, and how they keep finding ways to extract every bit of fidelity out of treasured LPs – essentially perfecting a much-beloved product over the course of 40+ years. \r\n\r\nHighlights include: a high-gloss acrylic laminate plinth designed for low mass and high stiffness. A “floating-glass” flywheel platter with Optiwhite polished rim, topped with a felt mat, and a low-mass, low-friction tonearm with precision bearings and steel counterweight – the result of 40 years of research and experimentation.  Rega’s own Elys 2 moving magnet cartridge will come factory fitted with this version of the Planar 3. The Planar 3 really sings with the Elys 2 MM cartridge onboard.\r\n\r\nThe Planar 3 is hailed the world over as the highest-value, entry-level, audiophile record player since its original introduction back in 1977, and it’s as much a conversation piece as it is a true high-fidelity component. Hi-Fi named its predecessor “Product of the Year” three years running. Herb Reichert of Stereophile magazine said, “I love the way it honors musicians.”",
+        "price": "1050.00",
+        "rating": "9.00",
+        "image_url": null,
+        "image": "rega_p3.jpg"
+    }
+}]
