@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="header-spacer"></div>
+
+<section id="product-details" class="container-fluid background-yellow">
+    <div class="row pb-3">
+        <div class="col-12 text-center">
+            <h2 class="mt-3 pt-3 white-label-text">Product Details</h2>
+            <hr class="style1 mb-3">
+        </div>
+        <div class="col-10 offset-1 col-md-4 offset-md-1 pb-3">
+            <div class="image-container h-50 pb-3">
+                {% if product.image %}
+                    <a href="/media/{{ product.image }}" target="_blank">
+                        <img src="/media/{{ product.image }}" class="card-img-top img-fluid" alt="...">
+                    </a>
+                {% else %}
+                    <a class="img-hover-zoom" href="{{ product.image }}" target="_blank">
+                        <img src="/media/no_image.jpg" class="card-img-top img-fluid" alt="...">
+                    </a>
+                {% endif %}
+            </div>
+
+        </div>
+        <div class="col-10 offset-1 col-md-5 offset-md-1 pb-3">
+            <div class="product-details-container blue-background pb-3">
+                <div class="card-body">
+                    <h5 class="text-white card-title text-center">{{ product.friendly_name }}</h5>
+                    <p class="mb-0 text-white"><span class="text-black">By : </span>{{ product.friendly_brand }}.</p>
+                    <p class="mb-0 card-text text-white"><span
+                            class="text-black">{% if product.category.name == 'manual_record_player' or  product.category.name == 'auto_record_player' %}
+                            Category :
+                            {% elif product.category.name == 'cleaner' or  product.category.name == 'headphones' %}Type
+                            :{% else %}
+                            Genre :{% endif %}</span> {{ product.category.friendly_name }}
+                    </p>
+                    {% if product.rating %}
+                        <p class="text-black">Rating : <span class="text-white">{{ product.rating }}</span> / 10</p>
+                    {% else %}
+                        <p class="text-black">No Rating</p>
+                    {% endif %}
+                        <p class="text-white"><span class="text-black">Description : </span>{{ product.description }}</p>
+                        <p class="text-white"><span class="text-black">Price : </span>{{ product.price }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
