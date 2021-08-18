@@ -29,20 +29,25 @@
             <div class="product-details-container blue-background pb-3">
                 <div class="card-body">
                     <h5 class="text-white card-title text-center">{{ product.friendly_name }}</h5>
-                    <p class="mb-0 text-white"><span class="text-black">By : </span>{{ product.friendly_brand }}.</p>
-                    <p class="mb-0 card-text text-white"><span
-                            class="text-black">{% if product.category.name == 'manual_record_player' or  product.category.name == 'auto_record_player' %}
+                    <p class="pb-1 text-white"><span class="text-black">By : </span>{{ product.friendly_brand }}.</p>
+                    <p class="pb-1 card-text text-black">
+                        {% if product.category.name == 'manual_record_player' or  product.category.name == 'auto_record_player' %}
                             Category :
-                            {% elif product.category.name == 'cleaner' or  product.category.name == 'headphones' %}Type
-                            :{% else %}
-                            Genre :{% endif %}</span> {{ product.category.friendly_name }}
+                        {% elif product.category.name == 'cleaner' or  product.category.name == 'headphones' %}
+                            Type :
+                        {% else %}
+                            Genre :
+                        {% endif %}
+                        <a class="text-white" href="{% url 'products' %}?category={{ product.category.name }}">
+                            <i class="fas fa-compact-disc"></i>{{ product.category.friendly_name }}</a>
                     </p>
+                    <p class="text-white pt-2"><span class="text-black">Description : </span>{{ product.description }}</p>
                     {% if product.rating %}
                         <p class="text-black">Rating : <span class="text-white">{{ product.rating }}</span> / 10</p>
                     {% else %}
                         <p class="text-black">No Rating</p>
                     {% endif %}
-                        <p class="text-white"><span class="text-black">Description : </span>{{ product.description }}</p>
+            
                         <p class="text-white"><span class="text-black">Price : </span>{{ product.price }}</p>
                 </div>
             </div>

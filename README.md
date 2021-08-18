@@ -41,6 +41,8 @@ a time when Vinyls were at their peak. Due to accessability reasons I had to alt
 * Had an issue with the contrast of the blue text on the white background that would of been an issue 
 for users due to a contrast issue.
 * I solved this by switching from `#018bd4` to a slightly deeper blue `#047ab7`
+* Encountered a bug when I was updating my products page where the icon for each product appeared several times instead of once.
+* I checked my code and relised i left out the closing i tag
 
 ## Credits 
 
