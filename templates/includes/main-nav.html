@@ -6,9 +6,9 @@
                 All Products
             </a>
             <div class="dropdown-menu blue-background" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -18,13 +18,12 @@
                 Vinyls
             </a>
             <div class="dropdown-menu blue-background" aria-labelledby="vinyls-link">
-                <a href="" class="dropdown-item">Heavy Metal</a>
-                <a href="" class="dropdown-item">Rock</a>
-                <a href="" class="dropdown-item">Hip Hop</a>
-                <a href="" class="dropdown-item">Soul</a>
-                <a href="" class="dropdown-item">Funk</a>
-                <a href="" class="dropdown-item">Pop</a>
-                <a href="" class="dropdown-item">All
+                <a href="{% url 'products' %}?category=heavy_metal" class="dropdown-item">Heavy Metal</a>
+                <a href="{% url 'products' %}?category=rock" class="dropdown-item">Rock</a>
+                <a href="{% url 'products' %}?category=hip_hop" class="dropdown-item">Hip Hop</a>
+                <a href="{% url 'products' %}?category=soul" class="dropdown-item">Soul</a>
+                <a href="{% url 'products' %}?category=pop" class="dropdown-item">Pop</a>
+                <a href="{% url 'products' %}?category=heavy_metal,rock,hip_hop,soul,pop" class="dropdown-item">All
                     Vinyls</a>
             </div>
         </li>
@@ -35,9 +34,9 @@
                 Accessories
             </a>
             <div class="dropdown-menu blue-background" aria-labelledby="accessories-link">
-                <a href="" class="dropdown-item">Headphones</a>
-                <a href="" class="dropdown-item">Cleaners</a>
-                <a href="" class="dropdown-item">All Accessories</a>
+                <a href="{% url 'products' %}?category=headphones" class="dropdown-item">Headphones</a>
+                <a href="{% url 'products' %}?category=cleaner" class="dropdown-item">Cleaners</a>
+                <a href="{% url 'products' %}?category=headphones,cleaners" class="dropdown-item">All Accessories</a>
             </div>
         </li>
 
@@ -47,9 +46,9 @@
                 Record Players
             </a>
             <div class="dropdown-menu blue-background" aria-labelledby="record-players-link">
-                <a href="" class="dropdown-item">Manual</a>
-                <a href="" class="dropdown-item">Automatic</a>
-                <a href="" class="dropdown-item">All
+                <a href="{% url 'products' %}?category=manual_record_player" class="dropdown-item">Manual</a>
+                <a href="{% url 'products' %}?category=auto_record_player" class="dropdown-item">Automatic</a>
+                <a href="{% url 'products' %}?category=manual_record_player,auto_record_player" class="dropdown-item">All
                     Record Players</a>
             </div>
         </li>
