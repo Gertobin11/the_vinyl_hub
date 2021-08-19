@@ -262,6 +262,14 @@ iframe {
                  0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
+.heading-shadow:hover,
+.heading-shadow:active,
+.heading-shadow:focus {
+    text-shadow: 0px 4px 3px rgba(255, 255, 255, 0.4),
+        0px 8px 13px rgba(255, 255, 255, 0.1),
+        0px 18px 23px rgba(255, 255, 255, 0.1);
+}
+
 /* zoom on hover for images , seen on https://w3bits.com/css-image-hover-zoom/ */
 .img-hover-zoom {
     overflow: hidden;
@@ -343,6 +351,12 @@ div.card-body {
     color: blue;
     background-color: white;
     border: 2px solid blue;
+}
+
+/* bag stylings */
+
+#bag-details {
+    min-height: 75vh;
 }
 
 /* media queries */
