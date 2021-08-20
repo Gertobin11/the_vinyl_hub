@@ -425,7 +425,22 @@ div.card-body {
 }
 
 /* media queries to make the navbar responsive on all devices */
-@media only screen and (max-width: 378px) {
+@media only screen and (max-width:349px) {
+    .header-spacer {
+        padding-top: 170px;
+    }
+
+    .nav-link {
+        padding: .5rem .2rem;
+    }
+
+    p.my-1 {
+        font-size: small;
+    }
+}
+
+/* media queries to make the navbar responsive on all devices */
+@media only screen and (max-width: 378px)  and (min-width:349px) {
     .header-spacer {
         padding-top: 140px;
     }

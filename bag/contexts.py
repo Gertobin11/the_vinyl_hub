@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.shortcuts import get_object_or_404
 
+from products.views import Product
 from decimal import Decimal
 
 
@@ -49,6 +50,7 @@ def bag_contents(request):
                     bag_items.append(sale_item)
 
     if bag_items:
+        print(bag)
         for bag_item in bag_items:
             subtotal = Decimal(bag_item['quantity']) * (bag_item[
                                                         'product'].price)
@@ -60,7 +62,7 @@ def bag_contents(request):
 
     ''' Code to see if free delivery criteria has been met,
      learned during Code Institute course '''
-    if total < settings.FREE_DELIVERY_THRESHOLD:
+    if new_total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = new_total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE
                                        / 100)
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total
