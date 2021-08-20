@@ -96,7 +96,7 @@ body {
     color :#047ab7;
 }
 
-.red-btn {
+.yellow-btn {
     border: 2px solid #fff;
     background-color: #fcb014;
 }
@@ -320,8 +320,36 @@ hr.style1 {
     border: 2px solid white;
 }
 
-.blue-button i::before {
+.blue-button:hover,
+.blue-button:active,
+.blue-button:focus {
+    background-color: #fff;
+    color: blue;
+    border: 2px solid blue;
+}
+
+.red-button {
+    background-color: #c01b21;
+    color: white;
+    border: 2px solid #fff;
+}
+
+.red-button:hover,
+.red-button:active,
+.red-button:focus {
+    background-color: #fff;
+    color: #c01b21;
+    border: 2px solid #c01b21;
+}
+
+.blue-button i:hover,
+.blue-button i:active,
+.blue-button i:focus {
     color: #fff;
+}
+
+.blue-button i::after {
+    color: blue;
 }
 
 
