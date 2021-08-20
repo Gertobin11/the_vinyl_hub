@@ -43,6 +43,8 @@ for users due to a contrast issue.
 * I solved this by switching from `#018bd4` to a slightly deeper blue `#047ab7`
 * Encountered a bug when I was updating my products page where the icon for each product appeared several times instead of once.
 * I checked my code and relised i left out the closing i tag
+* Encountered a bug when using javascript to update the quantity on the bag , it wouldnt trigger the form to update
+* I solved this my giving the form an id and targetting it directly
 
 ## Credits 
 

@@ -1,6 +1,5 @@
 from django.conf import settings
 from django.shortcuts import get_object_or_404
-from products.models import Product
 
 from decimal import Decimal
 
@@ -35,34 +34,35 @@ def bag_contents(request):
             if bag_item['product'].category.name == 'hip_hop':
                 sale_items.append(bag_item)
                 bag_items.remove(bag_item)
-        if len(sale_items) > 1 or sale_items[0].get('quantity') > 1:
-            for sale_item in sale_items:
-                sale_item['product'].price = (sale_item['product'].price -
-                                              (sale_item['product'].price
-                                               * 20 / 100))
-                sale_item['product'].price = Decimal(sale_item['product']
-                                                     .price).quantize(
-                                                     Decimal('.01'))
-                bag_items.append(sale_item)
-        else:
-            for sale_item in sale_items:
-                bag_items.append(sale_item)
+        if sale_items:
+            if len(sale_items) > 1 or sale_items[0].get('quantity') > 1:
+                for sale_item in sale_items:
+                    sale_item['product'].price = (sale_item['product'].price -
+                                                  (sale_item['product'].price
+                                                  * 20 / 100))
+                    sale_item['product'].price = Decimal(sale_item['product']
+                                                         .price).quantize(
+                                                         Decimal('.01'))
+                    bag_items.append(sale_item)
+            else:
+                for sale_item in sale_items:
+                    bag_items.append(sale_item)
 
     if bag_items:
         for bag_item in bag_items:
-            subtotal = Decimal(bag_item['quantity']) * bag_item['product'].price
+            subtotal = Decimal(bag_item['quantity']) * (bag_item[
+                                                        'product'].price)
             subtotals.append(subtotal)
 
     new_total = sum(subtotals)
-            
+
     discount = total - new_total
-
-
 
     ''' Code to see if free delivery criteria has been met,
      learned during Code Institute course '''
     if total < settings.FREE_DELIVERY_THRESHOLD:
-        delivery = new_total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
+        delivery = new_total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE
+                                       / 100)
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total
     else:
         delivery = 0
