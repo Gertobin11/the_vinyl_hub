@@ -45,6 +45,8 @@ for users due to a contrast issue.
 * I checked my code and relised i left out the closing i tag
 * Encountered a bug when using javascript to update the quantity on the bag , it wouldnt trigger the form to update
 * I solved this my giving the form an id and targetting it directly
+* Upon further testing this was only updating the first item in the bag.
+* So I rechecked my bag.html and after alot of headscratching realised for stlying I put the 2 anchors in a div and this stopped my javascript function from finding the form class with the .prev method. I deleted the div and this solved the issue.
 
 ## Credits 
 

@@ -26,31 +26,30 @@ def bag_contents(request):
             'product': product,
         })
 
-    ''' code to check if more then 1 hip hop item were bought
+    ''' code to check if more then 1 hip hop item were bought and are registered
         it first check if the item has the chosen category which is on sale.
         then checks if there are more then 2. If the conditions are met it
-        applies a 20% discount '''
-    if bag_items:
-        for bag_item in bag_items:
-            if bag_item['product'].category.name == 'hip_hop':
-                sale_items.append(bag_item)
-                bag_items.remove(bag_item)
+        applies a 15% discount '''
+    if request:
+        if bag_items:
+            for bag_item in bag_items:
+                if bag_item['product'].category.name == 'hip_hop':
+                    sale_items.append(bag_item)
+                    bag_items.remove(bag_item)
         if sale_items:
-            if len(sale_items) > 1 or sale_items[0].get('quantity') > 1:
+            if len(sale_items) > 1 or sale_items[0]['quantity'] > 1:
                 for sale_item in sale_items:
-                    sale_item['product'].price = (sale_item['product'].price -
-                                                  (sale_item['product'].price
-                                                  * 20 / 100))
-                    sale_item['product'].price = Decimal(sale_item['product']
-                                                         .price).quantize(
-                                                         Decimal('.01'))
+                    s_price = sale_item['product'].price
+                    s_price = s_price - (s_price * 20 / 100)
+                    s_price = Decimal(s_price.quantize(Decimal('.01')))
+                    sale_item['product'].price = s_price
                     bag_items.append(sale_item)
             else:
                 for sale_item in sale_items:
                     bag_items.append(sale_item)
+        # bag = bag_items
 
     if bag_items:
-        print(bag)
         for bag_item in bag_items:
             subtotal = Decimal(bag_item['quantity']) * (bag_item[
                                                         'product'].price)
@@ -74,6 +73,7 @@ def bag_contents(request):
 
     context = {
         'bag_items': bag_items,
+        'bag': bag,
         'total': total,
         'product_count': product_count,
         'delivery': delivery,
@@ -83,11 +83,5 @@ def bag_contents(request):
         'discount': discount,
         'new_total': new_total
     }
-
-    print(new_total)
-    print(discount)
-    print(grand_total)
-    print(total)
-    print(delivery)
 
     return context

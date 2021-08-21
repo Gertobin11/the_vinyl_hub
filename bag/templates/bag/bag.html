@@ -29,63 +29,61 @@
                         </thead>
 
                         {% for item in bag_items %}
-                        <tr>
-                            <td class="p-3 w-25 d-none d-sm-table-cell">
-                                {% if item.product.image %}
-                                <img class="img-fluid rounded" src="{{ item.product.image.url }}"
-                                    alt="{{ item.product.name }}">
-                                {% else %}
-                                <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png"
-                                    alt="{{ item.product.name }}">
-                                {% endif %}
-                            </td>
-                            <td class="py-3">
-                                <p class="my-0"><strong>{{ item.product.friendly_name }}</strong></p>
-                                <p class="my-0">SKU: {{ item.product.sku|upper }}</p>
-                            </td>
-                            <td class="py-3">
-                                <p class="my-0">${{ item.product.price }}</p>
-                            </td>
-                            <td class="py-3 w-25">
-                                <form id="update-form" class="form update-form" method="POST"
-                                    action="{% url 'adjust_bag' item.item_id %}">
-                                    {% csrf_token %}
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <button class="decrement-qty btn btn-sm blue-button"
-                                                    data-item_id="{{ item.item_id }}" aria-label="decrease quantity"
-                                                    id="decrement-qty_{{ item.item_id }}">
-                                                    <span>
-                                                        <i class="fas fa-minus fa-sm"></i>
-                                                    </span>
-                                                </button>
-                                            </div>
-                                            <input class="form-control form-control-sm qty_input search-box box-shadow-small" type="number"
-                                                name="quantity" value="{{ item.quantity }}" min="1" max="99"
-                                                data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
-                                            <div class="input-group-append">
-                                                <button class="increment-qty btn btn-sm blue-button"
-                                                    data-item_id="{{ item.item_id }}" aria-label="increase quantity"
-                                                    id="increment-qty_{{ item.item_id }}">
-                                                    <span>
-                                                        <i class="fas fa-plus fa-sm"></i>
-                                                    </span>
-                                                </button>
+                            <tr>
+                                <td class="p-3 w-25 d-none d-sm-table-cell">
+                                    {% if item.product.image %}
+                                    <img class="img-fluid rounded" src="{{ item.product.image.url }}"
+                                        alt="{{ item.product.name }}">
+                                    {% else %}
+                                    <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png"
+                                        alt="{{ item.product.name }}">
+                                    {% endif %}
+                                </td>
+                                <td class="py-3">
+                                    <p class="my-0"><strong>{{ item.product.friendly_name }}</strong></p>
+                                    <p class="my-0">SKU: {{ item.product.sku|upper }}</p>
+                                </td>
+                                <td class="py-3">
+                                    <p class="my-0">${{ item.product.price }}</p>
+                                </td>
+                                <td class="py-3 w-25">
+                                    <form id="update-form" class="form new-form" method="POST"
+                                        action="{% url 'adjust_bag' item.item_id %}">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="decrement-qty btn btn-sm blue-button"
+                                                        data-item_id="{{ item.item_id }}" aria-label="decrease quantity"
+                                                        id="decrement-qty_{{ item.item_id }}">
+                                                        <span>
+                                                            <i class="fas fa-minus fa-sm"></i>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                <input class="form-control form-control-sm qty_input search-box box-shadow-small" type="number"
+                                                    name="quantity" value="{{ item.quantity }}" min="1" max="99"
+                                                    data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
+                                                <div class="input-group-append">
+                                                    <button class="increment-qty btn btn-sm blue-button"
+                                                        data-item_id="{{ item.item_id }}" aria-label="increase quantity"
+                                                        id="increment-qty_{{ item.item_id }}">
+                                                        <span>
+                                                            <i class="fas fa-plus fa-sm"></i>
+                                                        </span>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </form>
-                                <div class="text-center mt-3">
-                                    <a class="update-link blue-button btn">Update</a>
-                                    <a class="remove-item btn text-end red-button" id="remove_{{ item.item_id }}"
+                                    </form>
+                                    <a class="pt-2 update-link blue-button btn">Update</a>
+                                    <a class="pt-2 remove-item btn text-end red-button" id="remove_{{ item.item_id }}"
                                         data-product_size="{{ item.size }}">Remove</a>
-                                </div>
-                            </td>
-                            <td class="py-3">
-                                <p class="my-0"> € {{ item.product.price | calc_subtotal:item.quantity }}</p>
-                            </td>
-                        </tr>
+                                </td>
+                                <td class="py-3">
+                                    <p class="my-0"> € {{ item.product.price | calc_subtotal:item.quantity }}</p>
+                                </td>
+                            </tr>
                         {% endfor %}
                         <tr>
                             <td colspan="5" class="pt-5 text-end">
@@ -146,7 +144,7 @@
     // Update quantity on click
     $('.update-link').click(function (e) {
         // encountered bug so targetting the id of the form solved it
-        var form = $('#update-form');
+        var form = $(this).prev('.new-form')
         form.submit();
     })
 
