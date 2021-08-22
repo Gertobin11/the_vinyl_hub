@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
 {% load bag_tools %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
 {% block content %}
 
 <div class="header-spacer"></div>
@@ -14,14 +17,14 @@
     </div>
     <div class="row text-center">
         <div class="col-12 col-lg-6 order-lg-last">
-            <p class="black-text">Order Summary ({{ product_count }})</p>
+            <p class="black-text">Order Summary <i class="text-black far fa-file-alt"></i> ({{ product_count }})</p>
             <div class="product-summary-container mb-4 mt-3 bg-white box-shadow w-75 mx-auto px-2">
                 <div class="row">
                     <div class="col-7 offset-2">
-                        <p class="mb-1 mt-2 small blue-text">Item</p>
+                        <p class="mb-1 mt-2 small blue-text text-start">Item</p>
                     </div>
                     <div class="col-3 text-right">
-                        <p class="mb-1 mt-2 small blue-text">Subtotal (incl. disc)</p>
+                        <p class="mb-1 mt-2 small blue-text text-end">Subtotal (incl. disc)</p>
                     </div>
                 </div>
                 {% for item in bag_items %}
@@ -29,13 +32,13 @@
                         <div class="col-2 mb-1">
                             <a href="{% url 'product_details' item.product.id %}">
                                 {% if item.product.image %}
-                                    <img class="w-100" src="/media/{{ item.product.image }}" alt="{{ product.friendly_name }}">
+                                    <img class="w-100" src="{{ MEDIA_URL }}{{ item.product.image }}" alt="{{ product.friendly_name }}">
                                 {% else %}
-                                    <img class="w-100" src="/media/no_image.jpg" alt="{{ product.friendly_name }}">
+                                    <img class="w-100" src="{{ MEDIA_URL }}no_image.jpg" alt="{{ product.friendly_name }}">
                                 {% endif %}
                             </a>
                         </div>
-                        <div class="col-7">
+                        <div class="col-7 text-start">
                             <p class="my-0"><strong>{{ item.product.friendly_name }}</strong></p>
                             <p class="my-0 small blue-text">Quantity: {{ item.quantity }}</p>
                         </div>
@@ -64,7 +67,7 @@
             </div>
         </div>
         <div class="col-12 col-lg-6">
-            <p class="text-black">Please fill out the form below</p>
+            <p class="text-black">Please fill out the form below <i class="text-black fas fa-arrow-down"></i></p>
             <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                 {% csrf_token %}
                 <fieldset class="mx-auto blue-background box-shadow px-3 text-center w-75 text-center mb-5">
@@ -86,7 +89,7 @@
                         {% endif %}
                     </div>
                 </fieldset>
-                <fieldset class="mx-auto blue-background box-shadow px-3 text-center w-75 text-center mb-5">
+                <fieldset class="mx-auto blue-background box-shadow px-3 text-center w-75 text-center mb-3">
                     <legend class="text-white">Payment</legend>
                     <!-- A Stripe card element will go here -->
                     <div class="mb-3" id="card-element"></div>
@@ -96,7 +99,26 @@
                     <!-- Pass the client secret to the view so we can get the payment intent id -->
                     <input type="hidden" value="{{ client_secret }}" name="client_secret">
                 </fieldset>
-
+                <div class="submit-button text-end mt-5 mb-2 px-3">
+                    <a href="{% url 'view_bag' %}" class="btn box-shadow-small red-button">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="font-weight-bold">Adjust Bag</span>
+                    </a>
+                    <button id="submit-button" class="btn search-box box-shadow-small">
+                        <span class="font-weight-bold">Complete Order</span>
+                        <span class="icon">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </button>
+                    <p class="text-black mt-3 small">
+                        <span class="icon">
+                            <i class="text-black fas fa-exclamation-circle"></i>
+                        </span>
+                        <span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
+                    </p>
+                </div>
             </form>
           
         </div>
@@ -107,5 +129,8 @@
 {% block postloadjs %}
 {{ block.super}}
 
+    {{ stripe_public_key|json_script:"id_stripe_public_key"}}
+    {{ client_secret|json_script:"id_client_secret"}}
+    <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 
 {% endblock %}
