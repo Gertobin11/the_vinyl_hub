@@ -1,4 +1,5 @@
-/* core logic and css from stripe.com */
+/* Core logic and css from stripe.com */
+// Also obtained through Code Institutes Boutique Ado
 
 let stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
 let clientSecret = $('#id_client_secret').text().slice(1, -1);
@@ -22,7 +23,7 @@ var style = {
 let card = elements.create('card');
 card.mount('#card-element');
 
-// handle realtime validation errors
+// Handle realtime validation errors
 
 card.addEventListener('change', function (event) {
     let errorDiv = document.getElementById('card-errors');
@@ -39,4 +40,42 @@ card.addEventListener('change', function (event) {
     } else {
         errorDiv.textContent = '';
     }
+});
+
+var form = document.getElementById('payment-form');
+
+// Handle form submit
+var form = document.getElementById('payment-form');
+
+form.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    card.update({
+        'disabled': true
+    });
+    $('#submit-button').attr('disabled', true);
+    stripe.confirmCardPayment(clientSecret, {
+        payment_method: {
+            card: card,
+        }
+    }).then(function (result) {
+        if (result.error) {
+            var errorDiv = document.getElementById('card-errors');
+            var html = `
+            <div class = "bg-white text-red border-red" >
+                <span class="icon" role="alert">
+                    <i class="fas fa-times"></i>
+                </span>
+                <span>${result.error.message}</span>
+            </div>`;
+            $(errorDiv).html(html);
+            card.update({
+                'disabled': false
+            });
+            $('#submit-button').attr('disabled', false);
+        } else {
+            if (result.paymentIntent.status === 'succeeded') {
+                form.submit();
+            }
+        }
+    });
 });
