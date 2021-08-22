@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+{% block content %}
+
+<div class="header-spacer"></div>
+
+<section id="payment-success" class="container-fluid background-yellow">
+    <div class="row">
+        <div class="col text-center">
+            <h2 class="pt-3 text-white heading-shadow">Thank You</h2>
+            <hr class="style1">
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-12 col-lg-6">
+
+        </div>
+        <div class="col-12 col-lg-6">
+            <img class="img-fluid" src="{{ MEDIA_URL }}checkout_image.jpg" alt="image of 9 records in a colorful background">
+        </div>
+    </div>
+</section>
+{% endblock %}
