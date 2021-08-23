@@ -298,6 +298,16 @@ hr.style1 {
     opacity: 1;
 }
 
+hr.style2 {
+    border: 0;
+    height: 2px;
+    background-image: -webkit-linear-gradient(left, #047ab4, #fff, #047ab4);
+    background-image: -moz-linear-gradient(left, #047ab4, #fff, #047ab4);
+    background-image: -ms-linear-gradient(left, #047ab4, #fff, #047ab4);
+    background-image: -o-linear-gradient(left, #047ab4, #fff, #047ab4);
+    opacity: 1;
+}
+
 /* Boutique ado back to top stylings */
 .btt-button {
     height: 42px;
