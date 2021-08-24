@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+{% endblock %}
+{% block content %}
+
+<div class="header-spacer"></div>
+
+<section id="user-profile" class="container-fluid background-yellow">
+    <div class="row">
+        <div class="col text-center">
+            <h2 class="pt-3 text-white heading-shadow">My Profile</h2>
+            <hr class="style1">
+        </div>
+</section>
+{% endblock %}
