@@ -1,1 +1,15 @@
 {% extends "base.html" %}
+
+{% block content %}
+    <div class="header-spacer"></div>
+    <div class="pt-4 text-white all-auth-vh container-fluid background-yellow">
+        <div class="container row">
+            <div class="col-12 col-md-6">
+                <div class="allauth-form-inner-content">
+                    {% block inner_content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

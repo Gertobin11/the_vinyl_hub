@@ -62,7 +62,7 @@ body {
     background-color: #c01b21;
 }
 
-/* from Bulma */
+/* From Bulma */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -79,7 +79,7 @@ body {
     text-shadow: 1px 1px #000;
 }
 
-/* keep search icon white */
+/* Keep search icon white */
 .fa-search:before {
     content: "\f002";
     color: white;
@@ -101,7 +101,7 @@ body {
     background-color: #fcb014;
 }
 
-/* taken from code institute Boutique Ado */
+/* Taken from code institute Boutique Ado */
 .main-logo-link {
     width: fit-content;
     padding-right: 0;
@@ -153,7 +153,7 @@ a.white-label-text.font-weight-bold.nav-link:focus {
 .dropdown-menu {
     border: none;
 }
-/* edit the color of the burger button */
+/* Edit the color of the burger button */
 .navbar-light .navbar-toggler-icon {
     border-radius: 8px;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(252,160,20, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -211,7 +211,7 @@ a.white-label-text.font-weight-bold.nav-link:focus {
     color: #fff;
 }
 
-/* footer styling */
+/* Footer styling */
 
 iframe {
     border-radius: 8px;
@@ -450,6 +450,16 @@ div.card-body {
     top: 45px;
     right: 15px;
     z-index: 99999999;
+}
+
+/* All auth styles*/
+
+.all-auth-vh {
+    min-height: 60vh;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
 }
 
 /* Media queries */

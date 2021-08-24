@@ -6,8 +6,8 @@
 {% block head_title %}{% trans "Confirm E-mail Address" %}{% endblock %}
 
 
-{% block content %}
-<h1>{% trans "Confirm E-mail Address" %}</h1>
+{% block inner_content %}
+<h1 class="text-white">{% trans "Confirm E-mail Address" %}</h1>
 
 {% if confirmation %}
 
@@ -17,14 +17,20 @@
 
 <form method="post" action="{% url 'account_confirm_email' confirmation.key %}">
 {% csrf_token %}
-    <button type="submit">{% trans 'Confirm' %}</button>
+<a href="{% url 'home' %}" class="btn red-button box-shadow-small my-2">
+    <span class="mr-2">
+        <i class="fas fa-hand-point-left"></i>
+    </span>
+    <span>Return to Homepage</span>
+</a>
+    <button class="btn blue-button box-shadow-small" type="submit">{% trans 'Confirm' %}</button>
 </form>
 
 {% else %}
 
 {% url 'account_email' as email_url %}
 
-<p>{% blocktrans %}This e-mail confirmation link expired or is invalid. Please <a href="{{ email_url }}">issue a new e-mail confirmation request</a>.{% endblocktrans %}</p>
+<p>{% blocktrans %}This e-mail confirmation link expired or is invalid. Please <a class="red-button box-shadow-small" href="{{ email_url }}">issue a new e-mail confirmation request</a>.{% endblocktrans %}</p>
 
 {% endif %}
 
