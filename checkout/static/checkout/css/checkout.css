@@ -62,3 +62,14 @@
 .fa-compact-disc {
     font-size: 100px !important;
 }
+
+/* Greyed out placeholder code from Code Institute */
+select,
+select option {
+    color: black;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+}
