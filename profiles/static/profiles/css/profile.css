@@ -1,0 +1,17 @@
+#profile-update-form input::placeholder {
+    color: lightskyblue
+}
+
+.profile-img {
+    border-radius: 10%;
+    border:4px solid #c01b21;
+}
+
+#id_default_country,
+#id_default_country option:not(:first-child) {
+    color: #000;
+}
+
+#id_default_country option:first-child {
+    color: #87cefa;
+}

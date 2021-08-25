@@ -23,7 +23,6 @@ class UserProfile(models.Model):
     default_postcode = models.CharField(max_length=20, null=True, blank=True)
     default_country = CountryField(blank_label='Country', null=True,
                                    blank=True)
-    profile_image_url = models.URLField(max_length=1024, null=True, blank=True)
     profile_image = models.ImageField(null=True, blank=True)
     favourite_genre = models.ForeignKey('products.Category',
                                         null=True, blank=True,

@@ -12,6 +12,7 @@ body {
     font-family: 'Oswald',
     sans-serif;
     min-height: 100vh;
+    background-color: #fcb014;
 }
 
 /* Navbar styling */
@@ -30,7 +31,7 @@ h1 strong.logo-font:focus {
     font-family: 'Audiowide',
     cursive;
     color: #c01b21;
-    font-size: 3.1rem;
+    font-size: 3rem;
     text-shadow: 2px 2px #fcb014;
 }
 
