@@ -8,7 +8,6 @@ from decimal import Decimal
 def bag_contents(request):
     bag_items = []
     discount = 0
-    sale_items = []
     subtotal = 0
     subtotals = []
     new_total = 0
@@ -30,25 +29,13 @@ def bag_contents(request):
         it first check if the item has the chosen category which is on sale.
         then checks if there are more then 2. If the conditions are met it
         applies a 15% discount '''
-    if request:
-        if bag_items:
-            for bag_item in bag_items:
-                if bag_item['product'].category.name == 'hip_hop':
-                    sale_items.append(bag_item)
-                    bag_items.remove(bag_item)
-        if sale_items:
-            if len(sale_items) > 1 or sale_items[0]['quantity'] > 1:
-                for sale_item in sale_items:
-                    s_price = sale_item['product'].price
-                    s_price = s_price - (s_price * 20 / 100)
-                    s_price = Decimal(s_price.quantize(Decimal('.01')))
-                    sale_item['product'].price = s_price
-                    bag_items.append(sale_item)
-            else:
-                for sale_item in sale_items:
-                    bag_items.append(sale_item)
-        # bag = bag_items
-
+    if request.user.is_authenticated:
+        for bag_item in bag_items:
+            if bag_item['product'].category.name == 'hip_hop':
+                bi_price = bag_item['product'].price
+                bi_price = bi_price - (bi_price * 15 / 100)
+                bi_price = Decimal(bi_price.quantize(Decimal('.01')))
+                bag_item['product'].price = bi_price
     if bag_items:
         for bag_item in bag_items:
             subtotal = Decimal(bag_item['quantity']) * (bag_item[

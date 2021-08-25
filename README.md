@@ -49,6 +49,8 @@ for users due to a contrast issue.
 * So I rechecked my bag.html and after alot of headscratching realised for stlying I put the 2 anchors in a div and this stopped my javascript function from finding the form class with the .prev method. I deleted the div and this solved the issue.
 * Had an issue with my messages where they would trigger but I couldn't see them , through Chrome Dev tools I could see the outline on the page
 so after checking the bootstrap 5 documentation I found this snippet `Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-bs-, as in data-bs-animation="".` they were `True` by default so I changed data-bs-autohide to `False` and the messages started to appear.
+* I had a big issue with my line item order , in fixing it I managed to mess up my discount context processor 
+* To fix this I had to rework the discount to a straight 15% for registered users. This is something that will be adjusted in later releases.
 
 ## Credits 
 
