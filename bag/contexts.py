@@ -27,8 +27,7 @@ def bag_contents(request):
 
     ''' code to check if more then 1 hip hop item were bought and are registered
         it first check if the item has the chosen category which is on sale.
-        then checks if there are more then 2. If the conditions are met it
-        applies a 15% discount '''
+         If the condition is  met it applies a 15% discount '''
     if request.user.is_authenticated:
         for bag_item in bag_items:
             if bag_item['product'].category.name == 'hip_hop':
