@@ -5,6 +5,11 @@
 .profile-img {
     border-radius: 10%;
     border:4px solid #c01b21;
+    max-width: 250px;
+    max-height: 250px;
+    width: 60%;
+    margin: auto;
+    display: block;
 }
 
 #id_default_country,
