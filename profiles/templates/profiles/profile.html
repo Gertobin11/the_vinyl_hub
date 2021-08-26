@@ -19,7 +19,7 @@
                 <!-- This will be used later to give recommendations -->
                 <p class="text-center">Favourite Genre : {{ profile.favourite_genre.friendly_name }}</p>
                 {% if profile.profile_image %}
-                    <img class="profile-img" src="{{ MEDIA_URL }}{{ profile.profile_image }}" alt="Image of {{ profile.username }}">
+                    <img class="profile-img" src="{{ profile.profile_image }}" alt="Image of {{ profile.username }}">
                 {% else %}
                     <img class="profile-img" src="{{ MEDIA_URL }}no_image.jpg"
                         alt="Placeholder image for {{ profile.username }}">
@@ -29,7 +29,13 @@
                 <p class="text-center fs-2 text-shadow text-white">Default Delivery Details</p>
                 <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                     {% csrf_token %}
-                    {{ form|crispy }}
+                    {% for field in form %}
+                        {% if field.name != 'image' %}
+                            {{ field | as_crispy_field }}
+                        {% else %}
+                            {{ field }}
+                        {% endif %}
+                    {% endfor %}
                     <button type="submit" class="btn blue-button box-shadow-small float-end">Update
                         Information</button>
                 </form>

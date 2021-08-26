@@ -6,7 +6,21 @@
 The Vinyl Hub is an e-commerce site selling classic vinyls, audio accessories and record players.
 It aims to build a customer base by providing high quality products and also developing a community,
 by allowing registered user a way to interact and show their vinyl collections by filling out a profile form.
-Registered users would also have the ability to request albums that could be added to the store.
+Registered users would also have the ability to request albums that could be added to the store. Due to the big scope
+I have planned for this project the profile section is basic. In future releases it will be added to significally.
+Theree is still discounts applied and the delivery details saved so I feel there is enough incentive for our shoppers to sign up
+to become site members.
+
+### Target Audience
+
+The target audience is the ever growing vinyl market in Ireland and abroad.
+There is a real movememt towards real and authentic sound and this site is hoping to be a part of that 
+by offering top quality products to those looking.
+
+### Business Logic
+
+This is straight forward as the business aspect would come directly selling our products in 
+the shop or fulfiiling our registered members request forms for products we can obtain.
 
 
 ### User Stories 
@@ -35,7 +49,10 @@ a time when Vinyls were at their peak. Due to accessability reasons I had to alt
 ### Font Choice
 
 The fonts that I have chosen have come from Google Fonts.
-They are Audiowide for headings ![audiowide font link](https://fonts.google.com/specimen/Audiowide)
+They are Audiowide for headings https://fonts.google.com/specimen/Audiowide.
+It really has an 80s vibe off the font that goes with the overall theme.
+For the main bodies of text I have chosen Oswald as I find these really compliment each other. https://fonts.google.com/specimen/Oswald
+
 
 
 
@@ -58,6 +75,10 @@ for users due to a contrast issue.
 so after checking the bootstrap 5 documentation I found this snippet `Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-bs-, as in data-bs-animation="".` they were `True` by default so I changed data-bs-autohide to `False` and the messages started to appear.
 * I had a big issue with my line item order , in fixing it I managed to mess up my discount context processor 
 * To fix this I had to rework the discount to a straight 15% for registered users. This is something that will be adjusted in later releases.
+* Have an issue on deployment to heroku where my media files in certain folders are not loading
+*  I solved this my altering te jinja templates
+* Issue where the profile form is not saving the media for user profiles , but is when adding manually through the admin
+
 
 ## Credits 
 
