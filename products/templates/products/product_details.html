@@ -15,7 +15,7 @@
             <div class="image-container h-50 pb-3">
                 {% if product.image %}
                     <a href="/media/{{ product.image }}" target="_blank">
-                        <img src="/media/{{ product.image }}" class="card-img-top img-fluid" alt="...">
+                        <img src="{{ MEDIA_URL }}{{ product.image }}" class="card-img-top img-fluid" alt="...">
                     </a>
                 {% else %}
                     <a class="img-hover-zoom" href="{{ product.image }}" target="_blank">
