@@ -77,7 +77,8 @@ so after checking the bootstrap 5 documentation I found this snippet `Options ca
 * To fix this I had to rework the discount to a straight 15% for registered users. This is something that will be adjusted in later releases.
 * Have an issue on deployment to heroku where my media files in certain folders are not loading
 *  I solved this my altering te jinja templates
-* Issue where the profile form is not saving the media for user profiles , but is when adding manually through the admin
+* Issue where the profile form is not saving the media for user profiles , but is when adding manually through the admin.
+* I added request.FILES to the view and added enctype to the form
 
 
 ## Credits 

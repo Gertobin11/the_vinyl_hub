@@ -19,7 +19,7 @@
                 <!-- This will be used later to give recommendations -->
                 <p class="text-center">Favourite Genre : {{ profile.favourite_genre.friendly_name }}</p>
                 {% if profile.profile_image %}
-                    <img class="profile-img" src="{{ profile.profile_image }}" alt="Image of {{ profile.username }}">
+                    <img class="profile-img" src="{{ MEDIA_URL }}{{ profile.profile_image }}" alt="Image of {{ profile.user }}">
                 {% else %}
                     <img class="profile-img" src="{{ MEDIA_URL }}no_image.jpg"
                         alt="Placeholder image for {{ profile.username }}">
