@@ -28,6 +28,9 @@ I built my user stories in an agile framework where I built upon the foundations
 the code institue's Boutique Ado project and tailored them to the needs of my projects users and store owner.
 The table below are the stories upon which this project was built
 
+![user story table](media/user_story1.png)
+![user story table 2](media/user_story2.png)
+
 ## UX
 
 ### Design Choices 
@@ -53,10 +56,34 @@ They are Audiowide for headings https://fonts.google.com/specimen/Audiowide.
 It really has an 80s vibe off the font that goes with the overall theme.
 For the main bodies of text I have chosen Oswald as I find these really compliment each other. https://fonts.google.com/specimen/Oswald
 
+### Wireframes
 
+My wireframes were done with Balsamiq https://balsamiq.cloud/ . These provided a good outline for my product.
+In the building process my designs adapted and changed throughout so these might look abit different.
 
+![bag-view](media/bag_view.png)
 
+![bag-view-alt](media/bag_view(Alternate732p).png)
 
+![checkout](media/checkout.png)
+
+![checkout-alt](media/checkout(Alternate266e).png)
+
+![home](media/home.png)
+
+![home-alt](media/home(mobile).png)
+
+![product-detail](media/product_detail.png)
+
+![product-detail-alt](media/product_detailAlternate549c).png)
+
+![products](media/products.png)
+
+![products-alt](media/products(Alternate750h).png)
+
+![profile-hub](media/profile_hub.png)
+
+![profile-hub-alt](media/profile_hub(mobile).png)
 
 ## Bugs & Fixes 
 
@@ -78,7 +105,7 @@ so after checking the bootstrap 5 documentation I found this snippet `Options ca
 * Have an issue on deployment to heroku where my media files in certain folders are not loading
 *  I solved this my altering te jinja templates
 * Issue where the profile form is not saving the media for user profiles , but is when adding manually through the admin.
-* I added request.FILES to the view and added enctype to the form
+* I added request.FILES to the view and added enctype to the form this solved the issue.
 
 
 ## Credits 
