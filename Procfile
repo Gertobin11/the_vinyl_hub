@@ -1,0 +1,1 @@
+web: gunicorn the_vinyl_hub.wsgi:application
