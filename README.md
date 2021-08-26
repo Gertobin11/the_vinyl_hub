@@ -18,6 +18,8 @@ The table below are the stories upon which this project was built
 
 ### Design Choices 
 
+#### Colour Pallette
+
 The overall structure of the site is based off bootstrap 5's row and column classes.
 The colours and overall theme of the site is based off a vibrant 80's colour pallette, i.e. MTV'S 80's logo.
 
@@ -29,6 +31,11 @@ a time when Vinyls were at their peak. Due to accessability reasons I had to alt
 ![colour pallette](media/mtv-80s-color-scheme_400x400.png)
 
 ![update color pallette](media/new_color_palette.png)
+
+### Font Choice
+
+The fonts that I have chosen have come from Google Fonts.
+They are Audiowide for headings ![audiowide font link](https://fonts.google.com/specimen/Audiowide)
 
 
 
