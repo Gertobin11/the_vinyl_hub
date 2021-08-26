@@ -85,6 +85,20 @@ In the building process my designs adapted and changed throughout so these might
 
 ![profile-hub-alt](media/profile_hub(mobile).png)
 
+## Features
+
+The first feature you see upon visiting the site is the responsive navbar.
+This not only is great for navigating the site but it also has a serch field and a real time shopping bag which is 
+continually updating your grand total.
+![responsive navbar](media/navbar-feature.png)
+
+This leads me nicely to the next feature where if the customer registers with the site they will receive a discount or special offer.
+As of now that is 15% off all hip hop records. This is applied in real time through context processors.
+
+When you register you will receive a confirmation email this will allow you to activate your user profile and build a profile.
+At the moment its very basic but in the future it will be fleshed out. Here you can store your default delivery information for faster
+checkouts in the future. 
+
 ## Bugs & Fixes 
 
 * Had an issue on the home page when I was checking responsiveness the h1 was being going over the page on devices under 700px.

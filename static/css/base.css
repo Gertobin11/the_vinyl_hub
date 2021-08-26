@@ -571,6 +571,11 @@ div.card-body {
     .small-text {
         font-size: x-small;
     }
+
+    .min-content {
+        width: min-content;
+    }
+
 }
 
 /* Media queries to make the navbar responsive on all devices */
@@ -589,6 +594,11 @@ div.card-body {
     .small-text {
         font-size: x-small;
     }
+
+    .min-content {
+        width: min-content;
+    }
+
 }
 
 @media only screen and (max-width: 402px) and (min-width: 378px) {
@@ -600,6 +610,10 @@ div.card-body {
     }
     p.my-1 {
         font-size: small;
+    }
+
+    .min-content {
+        width: min-content;
     }
 
     .small-text {
