@@ -58,7 +58,7 @@
                 <div class="card box-shadow">
                     {% if product.image %}
                         <a class="img-hover-zoom" href="{% url 'product_details' product.id %}">
-                            <img src="{% 'MEDIA_URL'   '{{product.image}}'' %}" class="card-img-top img-fluid" alt="...">
+                            <img src="{% 'MEDIA_URL' '{{product.image}}' %}" class="card-img-top img-fluid" alt="...">
                         </a>
                     {% else %}
                          <a class="img-hover-zoom" href="{% url 'product_details' product.id %}">
