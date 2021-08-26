@@ -99,6 +99,95 @@ When you register you will receive a confirmation email this will allow you to a
 At the moment its very basic but in the future it will be fleshed out. Here you can store your default delivery information for faster
 checkouts in the future. 
 
+A secure payment system from stripe where customers can pay with confidence.
+
+A feature that will hopefully make it into this release is the request a product page. Where customers can request a product or record they would 
+like to buy but find it hard to get.
+
+## Future Features
+
+The user profiles will be expanded into user profile section where users can interact with other users and have a
+message system to promote traffic to the site.
+
+I have added favourite genre to the user profile , whichever genre they pick will be used to show products on a carousel at the bottom
+of the page for the user. Didnt have time to implement in this release.
+
+## Technologies Used
+
+- __HTML:__ The HyperText Markup Language, or HTML is the
+ standard markup language for documents designed to be displayed in a web browser.
+
+- __CSS:__ Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. 
+ is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[
+
+- __JAVASCRIPT:__ JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled
+, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions. 
+
+- __JQUERY:__ jQuery is a JavaScript library designed to simplify HTML DOM tree traversal
+ and manipulation, as well as event handling, CSS animation, and Ajax.
+
+- __DJANGO:__ Django is a Python-based free and open-source web framework that follows the model–template–views architectural pattern. It is maintained by the Django Software Foundation, an American independent organization established as a 501 non-profit.
+
+- __PYTHON:__ Python is an interpreted high-level general-purpose programming language.
+ Python's design philosophy emphasizes code readability with its notable use of significant indentation. 
+ Its language constructs as well as its object-oriented
+ approach aim to help programmers write clear, logical code for small and large-scale projects. 
+
+- __SQLITE:__ SQLite is an in-process library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine. The code for SQLite is in the public domain and is thus free for use for any purpose, commercial or private. SQLite is the most widely deployed database in the world with more applications than we can count, including several high-profile projects.
+
+- __HEROKU POSTGRES:__ Heroku Postgres is a managed SQL database service provided directly by Heroku. You can access a Heroku Postgres database from any language with a PostgreSQL driver, including all languages officially supported by Heroku.
+
+ - __Git:__ Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion,CVS, Perforce
+, and ClearCase with features like cheap local branching, convenient
+ staging areas, and multiple workflows.
+
+ - __Github:__ GitHub is a Git repository hosting service, but it adds many of its own features. While Git is a command line tool, GitHub provides a Web-based graphical interface.
+  It also provides access control and several collaboration features, such as a wikis and basic task management tools for every project.
+
+- __BOOTSTRAP5:__ Bootstrap, the most popular front-end framework built to design modern, responsive, and dynamic interfaces for professional design web pages, is currently undertaking a major update, Bootstrap 5.
+
+- __Gitpod:__ Gitpod is a container-based development platform that puts developer experience first. Gitpod provisions ready-to-code development environments in the cloud accessible
+ through your browser and your local IDE (stay tuned for a blog post with more details on that).
+
+- __VSCODE:__ Visual Studio Code is a source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting,
+  intelligent code completion, snippets, code refactoring, and embedded Git.
+
+- __STRIPE:__ Stripe is an Irish-American financial services and software as a service company dual-headquartered in San Francisco, United States and Dublin, Ireland. The company primarily offers payment processing software and application programming interfaces for e-commerce websites and mobile applications.
+
+- Along with all of these technologies I used packages and other bits from these in development.They can also be found in my requirements.txt file
+
+- asgiref==3.4.1
+- boto3==1.18.29
+- botocore==1.21.29
+- crispy-bootstrap5==0.5
+- dj-database-url==0.5.0
+- Django==3.2.6
+- django-allauth==0.41.0
+- django-countries==7.2.1
+- django-crispy-forms==1.12.0
+- django-storages==1.11.1
+- gunicorn==20.1.0
+- jmespath==0.10.0
+- oauthlib==3.1.1
+- Pillow==8.3.1
+- psycopg2-binary==2.9.1
+- pylint-django==2.4.4
+- pylint-plugin-utils==0.6
+- python3-openid==3.2.0
+- pytz==2021.1
+- requests-oauthlib==1.3.0
+- s3transfer==0.5.0
+- sqlparse==0.4.1
+- stripe==2.60.0
+
+## Manual Testing 
+
+I have been doing continual testing throughout development , catching bugs outlined further on, So I will concentrate my manual testing on 
+the user stories I have generated as this covers all aspects of functionality! crud operations payments and database manipulation.
+Here is the link for the [manual testing](manual_testing.md)
+
+
 ## Bugs & Fixes 
 
 * Had an issue on the home page when I was checking responsiveness the h1 was being going over the page on devices under 700px.
