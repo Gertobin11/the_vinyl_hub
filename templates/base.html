@@ -93,10 +93,10 @@
                         </li>
                         {% if request.user.is_authenticated %}
                             <li class="list-inline-item">
-                                <a class="nav-link" href="">
+                                <a class="nav-link" href="{% url 'requests' %}">
                                     <div class="heading-shadow text-center">
                                         <div class="icon"><i class="fas fa-users fa-lg"></i></div>
-                                        <p class="text-white my-0">User Profiles</p>
+                                        <p class="text-white my-0">Requests</p>
                                     </div>
                                 </a>
                             </li>
@@ -195,7 +195,8 @@
                                     <a class="text-white no-dec heading-shadow" href="{% url 'profile' %}">My Profile</a>
                                 </li>
                                 <li class="mb-2">
-                                    <a class="text-white no-dec heading-shadow" href="">User Profiles</a>
+                                    <a class="text-white no-dec heading-shadow" href="{% url 'requests' %}">Requests
+                                        </a>
                                 </li>
                             {% endif %}
                             <li class="mb-2">
