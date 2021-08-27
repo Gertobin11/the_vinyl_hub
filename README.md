@@ -210,6 +210,15 @@ so after checking the bootstrap 5 documentation I found this snippet `Options ca
 * Issue where the profile form is not saving the media for user profiles , but is when adding manually through the admin.
 * I added request.FILES to the view and added enctype to the form this solved the issue.
 
+## Html and CSS Validation
+
+Passed all HTML and CSS was passed too but it only didnt recognise the :is pseudo selector, I checked and it seems to be used quiet alot
+so I decided to keep it in.
+
+![html valid](media/html-valid.png)
+
+![html valid](media/html-products-validation.png)
+
 
 ## Credits 
 

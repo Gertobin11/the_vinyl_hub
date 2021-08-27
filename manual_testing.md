@@ -16,7 +16,8 @@ products details.
 
 3. See Below
 
-4. These can be seen from the same test as they are purely visual, you can see on the banner underneath the navbar that theres 15% off for registered users and the shopping bag icon is counting the grand total see image below
+4. These can be seen from the same test as they are purely visual, you can see on the banner underneath the navbar that theres 15% off for registered users and the shopping bag icon is counting the grand total see image below. I checked this in real time where I was logged out , and 
+was charged full price then logged in and it popped up in my screen the discount as soon as I had logged in
 
 ![user stories 3 & 4](media/navbar-feature.png)
 
@@ -61,3 +62,70 @@ search functions in the nav bar and all worked as expected.
 ![search-test](media/searchtest.png)
 
 ![search-test](media/sorting-feedback.png)
+
+## User Stories 18 - 24
+
+These all have to do with completing the shopping experience from checking out with your bag
+to paying and then receiving the confirmation email. I rigorously tested these and the accompanying webhooks for safety and security. 
+All payments were received along with the accomanying email and registered users have an order history in their profile.
+
+![checkout process testing](media/webhook_test.png)
+
+![checkout process testing](media/webhook-handler-test.png)
+
+![checkout process testing](media/webhook-handler-test-2.png)
+
+![checkout process testing](media/webhook-handler-test-3.png)
+
+![checkout process testing](media/email-test.png)
+
+![checkout process testing](media/checkout_success.jpg)
+
+![checkout process testing](media/test-form-submits-to-stripe.png)
+
+## User Stories 25 - 28
+
+These all have to do with the crud functionality for store owners.
+These options are only availabe to store owners. To test these firstly  I added products to the store.
+I then searched for them and when I found them I edited them, then I searched again and when I found it again I deleted it.
+I went to the admin and checked the products model and it was deleted. WOrked as intended
+
+![crud test](media/edit--add-product-checks.png)
+
+![crud test](media/remove-productpic-test.png)
+
+## Subsuquent User Story
+
+In development I alwas thought about user feedback and delivered this through toasts from bootstrap,
+it was an oversight in my user stories but have developed the site with this in mind and tested throughout and 
+site users are informed of their actions.
+
+## Usability 
+
+- I have checked the navbar and sidenav bar and all direct to the intended pages and work correctly.
+
+- All buttons and navigation buttons redirect to intended locations with no errors.
+
+- I have used black text on the background colours that I have chosen as it gives the greatest contrast for readability.
+
+- Buttons and Nav are bright and easy to see and use.
+
+- All user actions recieve clear feedback.
+
+## Database Testing
+
+- This was carried out in my functionality testing as I was checking the database was storing updating and deleting 
+data as requested. I came across no errors.
+
+## Compatibility Testing
+
+- I was basing my development on Google Chrome and was doing all my tests on that browser, so to make sure it was working on 
+other browsers too I tested them on mozilla firefox and microsoft edge.
+
+- I opened my website in firefox and did all the previous checks and I didnt notice anything different , everything behaved as expected.
+
+- I opened my website in microsoft edge and again everything worked as expected and it all appeared as expected.
+
+## Responsiveness Testing
+I had been checking throughout for responsiveness issues with chrome developer tools, came accross a few issues with the dynamic elements
+in the navbar but I seem t have olved all of them with media queries

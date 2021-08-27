@@ -1,13 +1,14 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Oswald&display=swap');
 
-/* base styling for headers */
+/* Base styling for headers */
+/* Getting error on validation but I checked on codepens and stackoverflow and it works*/
 :is(h1, h2, h3, h4, h5, h6,) {
     font-family: 'Audiowide',
     cursive;
 }
 
-/* setting default styling for the body */
+/* Setting default styling for the body */
 body {
     font-family: 'Oswald',
     sans-serif;
@@ -165,7 +166,6 @@ a.white-label-text.font-weight-bold.nav-link:focus {
 .dropdown-item:focus,
 .dropdown-item:hover {
     color: #047ab7;
-    background-color: fff;
 }
 
 .dropdown-item {
@@ -579,7 +579,7 @@ div.card-body {
 }
 
 /* Media queries to make the navbar responsive on all devices */
-@media only screen and (max-width: 378px)  and (min-width:349px) {
+@media only screen and (max-width: 402px)  and (min-width:349px) {
     .header-spacer {
         padding-top: 140px;
     }
@@ -601,25 +601,6 @@ div.card-body {
 
 }
 
-@media only screen and (max-width: 402px) and (min-width: 378px) {
-    .header-spacer {
-        padding-top: 115px;
-    }
-    .nav-link {
-        padding: .5rem .2rem;
-    }
-    p.my-1 {
-        font-size: small;
-    }
-
-    .min-content {
-        width: fit-content;
-    }
-
-    .small-text {
-        font-size: x-small;
-    }
-}
 
 @media only screen and (max-width: 586px) and (min-width: 566px) {
     .header-spacer {
