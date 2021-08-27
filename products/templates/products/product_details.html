@@ -14,7 +14,7 @@
         <div class="col-10 offset-1 col-md-4 offset-md-1 pb-3">
             <div class="image-container h-50 pb-3">
                 {% if product.image %}
-                    <a href="/media/{{ product.image }}" target="_blank">
+                    <a href="{{MEDIA_URL }}{{ product.image }}" target="_blank">
                         <img src="{{ MEDIA_URL }}{{ product.image }}" class="card-img-top img-fluid" alt="...">
                     </a>
                 {% else %}
