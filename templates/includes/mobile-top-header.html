@@ -1,7 +1,7 @@
 <ul class="ms-0 ps-0">
     <li class="list-inline-item">
             <a href="{% url 'home' %}" class="d-md-block nav-link main-logo-link d-none d-lg-none">
-                <h1 class="mt-6 logo-accent mb-lg-0">The <strong class="logo-font">Vinyl</strong> Hub</h1>
+                <h2 class="mt-6 logo-accent mb-lg-0">The <strong class="logo-font">Vinyl</strong> Hub</h2>
             </a>
     </li>
     <li class="list-inline-item">
@@ -40,13 +40,13 @@
         <div class="dropdown-menu border-0" aria-labelledby="user-options">
             {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
-                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                    <a href="{% url 'add_product' %}" class="dropdown-item blue-background">Product Management</a>
                 {% endif %}
                 <a href="" class="dropdown-item">My Profile</a>
-                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                <a href="{% url 'account_logout' %}" class="dropdown-item blue-background">Logout</a>
             {% else %}
-                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                <a href="{% url 'account_signup' %}" class="dropdown-item blue-background">Register</a>
+                <a href="{% url 'account_login' %}" class="dropdown-item blue-background">Login</a>
             {% endif %}
         </div>
     </li>
