@@ -313,6 +313,7 @@ iframe {
 
 .card {
     width: 90%;
+    margin:auto
 }
 
 /* found a nice hr style here https://css-tricks.com/examples/hrs/ */
