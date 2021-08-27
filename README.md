@@ -56,6 +56,14 @@ They are Audiowide for headings https://fonts.google.com/specimen/Audiowide.
 It really has an 80s vibe off the font that goes with the overall theme.
 For the main bodies of text I have chosen Oswald as I find these really compliment each other. https://fonts.google.com/specimen/Oswald
 
+### Database Schema 
+
+I used [dbdiagram.io](https://dbdiagram.io/home) to design the layout of my project to guide its development.
+Below you can see a the models and their interactions
+
+![database schema](media/Database-Schema.png)
+
+
 ### Wireframes
 
 My wireframes were done with Balsamiq https://balsamiq.cloud/ . These provided a good outline for my product.
