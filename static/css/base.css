@@ -573,7 +573,7 @@ div.card-body {
     }
 
     .min-content {
-        width: min-content;
+        width: fit-content;
     }
 
 }
@@ -596,7 +596,7 @@ div.card-body {
     }
 
     .min-content {
-        width: min-content;
+        width: fit-content;
     }
 
 }
@@ -613,7 +613,7 @@ div.card-body {
     }
 
     .min-content {
-        width: min-content;
+        width: fit-content;
     }
 
     .small-text {
