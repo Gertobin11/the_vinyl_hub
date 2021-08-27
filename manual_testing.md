@@ -13,3 +13,14 @@ by filtering or searching and clicking on the image. This brought me to the prod
 products details.
 
 ![user story 2](media/user-story-2.png)
+
+3. See Below
+
+4. These can be seen from the same test as they are purely visual, you can see on the banner underneath the navbar that theres 15% off for registered users and the shopping bag icon is counting the grand total see image below
+
+![user stories 3 & 4](media/navbar-feature.png)
+
+5. This is for customers to see what they have spent and to see if they have received any discounts.This can be seen in the bottom right hand
+corner of the shopping bag. While here I noticed that I accidently put the dollar sign in 2 totals, I fixed that now.
+
+## User Stories 
